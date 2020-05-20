@@ -14,28 +14,10 @@ import {
  
 } from "reactstrap";
 
-function IndexNavbar() {
-  const [navbarColor, setNavbarColor] = React.useState("navbar-transparent");
+function NewNavbar() {
+  
   const [collapseOpen, setCollapseOpen] = React.useState(false);
-  React.useEffect(() => {
-    const updateNavbarColor = () => {
-      if (
-        document.documentElement.scrollTop > 399 ||
-        document.body.scrollTop > 399
-      ) {
-        setNavbarColor("");
-      } else if (
-        document.documentElement.scrollTop < 400 ||
-        document.body.scrollTop < 400
-      ) {
-        setNavbarColor("navbar-transparent");
-      }
-    };
-    window.addEventListener("scroll", updateNavbarColor);
-    return function cleanup() {
-      window.removeEventListener("scroll", updateNavbarColor);
-    };
-  });
+ 
   return (
     <div>
       {collapseOpen ? (
@@ -47,19 +29,16 @@ function IndexNavbar() {
           }}
         />
       ) : null}
-      <Navbar className={"fixed-top " + navbarColor} expand="lg" color="info">
+      <Navbar className={"fixed-top "} expand="lg" color="info">
         <Container>
           <div className="navbar-translate">
             <NavbarBrand
               id="navbar-brand"
             >
-            <img src= {require("../../assets/img/now-logo.png")}
-            style={{maxWidth:"25px", height:"auto", marginTop:"-15px",marginRight:"5px"}}
-            />
-               Orion Innovations
+              Orion Innovations
             </NavbarBrand>
             <UncontrolledTooltip target="#navbar-brand">
-              Exactly what you are looking for
+              Best place to get satisfied
             </UncontrolledTooltip>
             <button
               className="navbar-toggler navbar-toggler"
@@ -131,4 +110,4 @@ function IndexNavbar() {
   );
 }
 
-export default IndexNavbar;
+export default NewNavbar;

@@ -1,9 +1,10 @@
 /*eslint-disable*/
 import React from "react";
 import 'font-awesome/css/font-awesome.min.css';
+import { Link } from "react-router-dom";
 
 // reactstrap components
-import { Container } from "reactstrap";
+import { Container, Button } from "reactstrap";
 // core components
 
 function IndexHeader() {
@@ -41,7 +42,23 @@ function IndexHeader() {
               src={require("assets/img/now-logo.png")}
             ></img>
             <h1 className="h1-seo">Orion Innovations</h1>
-            <h3>We delight our customers because we give them exactly what they are looking for</h3>
+            <h3>We give our customers exactly what they are looking for</h3>
+            <br />
+            <Link to="/gallery">
+            <Button
+              className="btn-round mr-1"
+              color="neutral"
+              outline
+            >
+              <i className="fa fa-play" />
+              Gallery
+            </Button>
+            </Link>
+            <Link to="/shop">
+            <Button className="btn-round" color="neutral" type="button" outline>
+              Shop
+            </Button>
+            </Link>
           </div>
           
         </Container>

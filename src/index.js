@@ -17,7 +17,7 @@
 */
 import React from "react";
 import ReactDOM from "react-dom";
-import { BrowserRouter, Route, Switch, Redirect } from "react-router-dom";
+import { BrowserRouter, Route, Switch } from "react-router-dom";
 
 // styles for this kit
 import "assets/css/bootstrap.min.css";
@@ -29,6 +29,8 @@ import "assets/demo/nucleo-icons-page-styles.css";
 
 import LandingPage from "pages/LandingPage.js";
 import AboutUsPage from "pages/AboutUsPage.js";
+import ServicePage from "pages/ServicePage.js";
+import HostingPage from "pages/HostingPage.js";
 
 
 ReactDOM.render(
@@ -37,6 +39,8 @@ ReactDOM.render(
         <Switch>
          <Route exact path='/' component={ LandingPage } />
          <Route exact path='/about-us' component={ AboutUsPage } />
+         <Route exact path='/services' component={ ServicePage } />
+         <Route exact path='/hosting' component={ HostingPage } />
         </Switch>
         
     

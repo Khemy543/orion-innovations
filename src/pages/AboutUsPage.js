@@ -5,29 +5,18 @@ import React from "react";
 // } from "reactstrap";
 
 // core components
-import IndexNavbar from "components/Navbars/IndexNavbar.js";
-import IndexHeader from "components/Headers/IndexHeader.js";
+import NewNavbar from "components/Navbars/NewNavbar.js";
 import DarkFooter from "components/Footers/DarkFooter.js";
 import {
-    Button,
-    Input,
-    InputGroupAddon,
-    InputGroupText,
-    InputGroup,
-    Container,
-    Row,
-    Col,
-    Card,
-    CardBody,
-    CardFooter,
-    CardTitle,
+    
+    Container
+   
   } from "reactstrap";
 // sections for this page
 
 
 function AboutUsPage() {
-    const [firstFocus, setFirstFocus] = React.useState(false);
-    const [lastFocus, setLastFocus] = React.useState(false);
+   
   React.useEffect(() => {
     document.body.classList.add("index-page");
     document.body.classList.add("sidebar-collapse");
@@ -41,12 +30,17 @@ function AboutUsPage() {
   });
   return (
     <div>
-      <IndexNavbar />
-      <div className="wrapper">
-        <IndexHeader />
-        <div className="main">
+      <NewNavbar />
+        
+        <div className="main" style={{marginTop:"70px"}}>
+        <div className="section section-contact-us text-center">
+            <Container>
+            <h2 className="title">Hello About US page</h2>
+            </Container>
         </div>
-    </div>
+            
+        </div>
+        <DarkFooter />
     </div>
   );
 }

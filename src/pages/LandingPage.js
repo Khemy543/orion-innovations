@@ -16,18 +16,13 @@ import {
     InputGroup,
     Container,
     Row,
-    Col,
-    Card,
-    CardBody,
-    CardFooter,
-    CardTitle,
+    Col
   } from "reactstrap";
 // sections for this page
 
 
 function LandingPage() {
-    const [firstFocus, setFirstFocus] = React.useState(false);
-    const [lastFocus, setLastFocus] = React.useState(false);
+    
   React.useEffect(() => {
     document.body.classList.add("index-page");
     document.body.classList.add("sidebar-collapse");
@@ -75,7 +70,7 @@ function LandingPage() {
                       }}
                     />
                     <div className="description" style={{marginTop:"-50px"}}>
-                    <h4 style={{color:"black", fontWeight:"500"}}>Web Design</h4>
+                    <h4 style={{color:"black", fontWeight:"500"}}>Website Design</h4>
                     <p style={{color:"rgba(0, 0, 0, 0.62)", fontWeight:"500"}}>
                       Larger, yet dramatically thinner. More powerful, but
                       remarkably power efficient.
@@ -132,7 +127,7 @@ function LandingPage() {
                       }}
                     />
                     <div className="description" style={{marginTop:"-50px"}}>
-                    <h4 style={{color:"black", fontWeight:"500"}}>Website Maintenance and Renovations</h4>
+                    <h4 style={{color:"black", fontWeight:"500"}}>Website Upgrades and Renovations</h4>
                     <p style={{color:"rgba(0, 0, 0, 0.62)", fontWeight:"500"}}>
                       Larger, yet dramatically thinner. More powerful, but
                       remarkably power efficient.
@@ -161,17 +156,22 @@ function LandingPage() {
                     </div>
               </Col>
               <Col md="4">
-              {/* <div>
-                    <img src={require("../assets/img/services/service1.png")}/>
+              <div>
+                    <img src={require("../assets/img/services/service2.png")}
+                    style={{
+                        maxWidth:"250px",
+                        height:"auto"
+                      }}
+                    />
                     <div className="description" style={{marginTop:"-50px"}}>
-                    <h4 className="info-title">Web Design</h4>
-                    <p>
+                    <h4 style={{color:"black", fontWeight:"500"}}>Website Maintenance</h4>
+                    <p style={{color:"rgba(0, 0, 0, 0.62)", fontWeight:"500"}}>
                       Larger, yet dramatically thinner. More powerful, but
                       remarkably power efficient.
                     </p>
                     
                   </div>
-                    </div> */}
+                    </div>
               </Col>
               
               </Row>
@@ -181,6 +181,7 @@ function LandingPage() {
         <div className="section section-about-us"
         style={{
           marginTop:"-70px"
+
         }}
         >
           <Container>
@@ -208,7 +209,7 @@ function LandingPage() {
                   </div>
                   
                 </Col>
-                <Col md="5">
+                <Col md="6">
                   <div
                     className="image-container image-right"
                     style={{
@@ -225,7 +226,7 @@ function LandingPage() {
 
         <div className="section section-contact-us text-center"
         style={{
-          background: "linear-gradient(rgba(0, 0, 0, 0.88),rgba(0, 0, 0, 0.88)), url(" + require("../assets/img/request.jpg") + ") no-repeat fixed",
+          background: "linear-gradient(rgba(0, 0, 0, 0.88),rgba(0, 0, 0, 0.88)), url(" + require("../assets/img/header2.jpg") + ") no-repeat fixed",
           backgroundSize: "cover"
           
         }}
