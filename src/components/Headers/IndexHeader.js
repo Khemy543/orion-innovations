@@ -53,7 +53,7 @@ function IndexHeader() {
             >
             </Typical>
              </h3>
-            <br />
+            
             <Link to="/hosting">
             <Button
               className="btn-round mr-1"

@@ -1,5 +1,11 @@
+
 import React from "react";
-import { Link } from "react-router-dom";
+//import { Link } from "react-router-dom";
+// nodejs library that concatenates strings
+//import { Link } from "react-router-dom";
+import classnames from "classnames";
+
+
 
 // reactstrap components
 import {
@@ -9,126 +15,102 @@ import {
   NavItem,
   NavLink,
   Nav,
-  Container,
- 
+  Container
 } from "reactstrap";
 
-function IndexNavbar() {
+function NavBar() {
   const [navbarColor, setNavbarColor] = React.useState("navbar-transparent");
-  const [collapseOpen, setCollapseOpen] = React.useState(false);
+  const [navbarCollapse, setNavbarCollapse] = React.useState(false);
+
+  const toggleNavbarCollapse = () => {
+    setNavbarCollapse(!navbarCollapse);
+    document.documentElement.classList.toggle("nav-open");
+  };
+
   React.useEffect(() => {
     const updateNavbarColor = () => {
       if (
-        document.documentElement.scrollTop > 399 ||
-        document.body.scrollTop > 399
+        document.documentElement.scrollTop > 299 ||
+        document.body.scrollTop > 299
       ) {
         setNavbarColor("");
       } else if (
-        document.documentElement.scrollTop < 400 ||
-        document.body.scrollTop < 400
+        document.documentElement.scrollTop < 300 ||
+        document.body.scrollTop < 300
       ) {
         setNavbarColor("navbar-transparent");
       }
     };
+
     window.addEventListener("scroll", updateNavbarColor);
+
     return function cleanup() {
       window.removeEventListener("scroll", updateNavbarColor);
     };
   });
   return (
-    <div>
-      {collapseOpen ? (
-        <div
-          id="bodyClick"
-          onClick={() => {
-            document.documentElement.classList.toggle("nav-open");
-            setCollapseOpen(false);
-          }}
-        />
-      ) : null}
-      <Navbar className={"fixed-top " + navbarColor} expand="lg" color="info">
-        <Container>
-          <div className="navbar-translate">
-            <NavbarBrand
+    <Navbar
+      className={classnames("fixed-top", navbarColor)}
+      color-on-scroll="300"
+      expand="lg"
+      color="info"
+    >
+      <Container>
+        <div className="navbar-translate">
+          <NavbarBrand
             data-placement="bottom"
             href="/"
-            >
+          >
             
-            <img alt="#" src= {require("../../assets/img/now-logo.png")}
+            <img alt="#" src={require("../../assets/img/now-logo.png")} 
             style={{maxWidth:"25px", height:"auto", marginTop:"-15px",marginRight:"5px"}}
             />
-               Orion Innovations
-            
-            </NavbarBrand>
-            
-            <button
-              className="navbar-toggler navbar-toggler"
-              onClick={() => {
-                document.documentElement.classList.toggle("nav-open");
-                setCollapseOpen(!collapseOpen);
-              }}
-              aria-expanded={collapseOpen}
-              type="button"
-            >
-              <span className="navbar-toggler-bar top-bar"></span>
-              <span className="navbar-toggler-bar middle-bar"></span>
-              <span className="navbar-toggler-bar bottom-bar"></span>
-            </button>
-          </div>
-          <Collapse
-            className="justify-content-end"
-            isOpen={collapseOpen}
-            navbar
+            Orion Innovations
+          </NavbarBrand>
+          <button
+            aria-expanded={navbarCollapse}
+            className={classnames("navbar-toggler navbar-toggler", {
+              toggled: navbarCollapse
+            })}
+            onClick={toggleNavbarCollapse}
           >
-            <Nav navbar>
-              <NavItem>
-              <Link
-                  style={{textDecoration:"none"}}
-                  to="/"
-                  >
-                <NavLink>
-                  Home
-                </NavLink>
-                </Link>
-              </NavItem>
-              <NavItem>
-              <Link
-                  style={{textDecoration:"none"}}
-                  to = "/about-us">
-                <NavLink>
-                  About Us
-                </NavLink>
-                </Link>
-              </NavItem>
-              <NavItem>
-              <Link
-                  style={{textDecoration:"none"}}
-                  to="/services"
-                  >
-                <NavLink>
-                  Services
-                </NavLink>
-                </Link>
-              </NavItem>
-              <NavItem>
-              <Link
-                  style={{textDecoration:"none"}}
-                  to="/hosting"
-                  >
-                <NavLink>
-                  Hosting
-                </NavLink>
-                </Link>
-              </NavItem>
-              
-              
-             
-            </Nav>
-          </Collapse>
-        </Container>
-      </Navbar>
-    </div>
+            <span className="navbar-toggler-bar bar1" />
+            <span className="navbar-toggler-bar bar2" />
+            <span className="navbar-toggler-bar bar3" />
+          </button>
+        </div>
+        <Collapse
+          className="justify-content-end"
+          navbar
+          isOpen={navbarCollapse}
+        >
+          <Nav navbar>
+            <NavItem>
+              <NavLink  href="/">
+                Home
+              </NavLink>
+            </NavItem>
+            <NavItem>
+              <NavLink  href="/about-us">
+                About Us
+              </NavLink>
+            </NavItem>
+            <NavItem>
+              <NavLink  href="/services">
+                Services
+              </NavLink>
+            </NavItem>
+            
+            <NavItem>
+              <NavLink  href="/hosting">
+                Hosting
+              </NavLink>
+            </NavItem>
+          </Nav>
+        </Collapse>
+      </Container>
+    </Navbar>
   );
 }
 
-export default IndexNavbar;
+export default NavBar;
