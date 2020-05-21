@@ -3,3 +3,9 @@
         overflow-x: hidden;
     }
 }
+
+@media(width:375px){
+    *{
+        overflow-x: hidden;
+    }
+}
