@@ -22,6 +22,9 @@ import {
 //axios
 import axios from "axios";
 
+//Helmet
+import { Helmet } from "react-helmet";
+
 //Cookies
 import { useCookies } from 'react-cookie';
 import CookieConsent from "react-cookie-consent";
@@ -87,6 +90,9 @@ function LandingPage() {
   });
   return (
     <div>
+      <Helmet>
+        <title>Home | Orion Innovations Limited</title>
+      </Helmet>
       <IndexNavbar />
       <div className="wrapper">
         <IndexHeader />

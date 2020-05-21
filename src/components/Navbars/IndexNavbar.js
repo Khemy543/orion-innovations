@@ -82,43 +82,43 @@ function IndexNavbar() {
           >
             <Nav navbar>
               <NavItem>
-                <NavLink>
-                  <Link
+              <Link
                   style={{textDecoration:"none"}}
                   to="/"
                   >
+                <NavLink>
                   Home
-                  </Link>
                 </NavLink>
+                </Link>
               </NavItem>
               <NavItem>
-                <NavLink>
-                <Link
+              <Link
                   style={{textDecoration:"none"}}
                   to = "/about-us">
+                <NavLink>
                   About Us
-                  </Link>
                 </NavLink>
+                </Link>
               </NavItem>
               <NavItem>
-                <NavLink>
-                <Link
+              <Link
                   style={{textDecoration:"none"}}
                   to="/services"
                   >
+                <NavLink>
                   Services
-                  </Link>
                 </NavLink>
+                </Link>
               </NavItem>
               <NavItem>
-                <NavLink>
-                <Link
+              <Link
                   style={{textDecoration:"none"}}
                   to="/hosting"
                   >
+                <NavLink>
                   Hosting
-                  </Link>
                 </NavLink>
+                </Link>
               </NavItem>
               
               

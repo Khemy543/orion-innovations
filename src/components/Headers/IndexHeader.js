@@ -81,7 +81,8 @@ function IndexHeader() {
             <br/>
             <br/>
             <br/>
-            <div data-aos='zoom-out'>
+            <br/>
+            <div>
               <h4>scroll down</h4>
               <i className = "fa fa-chevron-down"/>
               </div>

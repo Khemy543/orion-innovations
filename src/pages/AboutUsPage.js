@@ -15,7 +15,9 @@ import {
     Col
    
   } from "reactstrap";
-// sections for this page
+
+//Helmet
+import { Helmet } from "react-helmet";
 
 
 function AboutUsPage() {
@@ -33,6 +35,9 @@ function AboutUsPage() {
   });
   return (
     <div>
+      <Helmet>
+        <title>About Us | Orion Innovations Limited</title>
+      </Helmet>
       <NewNavbar />
         
         <div className="main" style={{marginTop:"20px"}}>

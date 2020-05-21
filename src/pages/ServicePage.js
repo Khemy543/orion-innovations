@@ -1,10 +1,5 @@
 import React from "react";
 
-// reactstrap components
-// import {
-// } from "reactstrap";
-
-// core components
 import IndexNavbar from "components/Navbars/IndexNavbar.js";
 import DarkFooter from "components/Footers/DarkFooter.js";
 import CarouselView from "components/Carousel/Carousel.js";
@@ -15,7 +10,9 @@ import {
     Col
    
   } from "reactstrap";
-// sections for this page
+
+  //helmet
+  import { Helmet } from "react-helmet";
 
 
 function ServicePage() {
@@ -34,7 +31,9 @@ function ServicePage() {
   return (
     <div>
       <IndexNavbar />
-        
+      <Helmet>
+        <title>Services | Orion Innovations Limited</title>
+      </Helmet>
         <div className="main">
           <CarouselView/>
         <div className="section section-contact-us text-center">

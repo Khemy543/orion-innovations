@@ -2,6 +2,8 @@ import React from "react";
 // core components
 import IndexNavbar from "components/Navbars/IndexNavbar.js";
 
+//Helmet
+import { Helmet } from "react-helmet";
 
 function HostingPage() {
     
@@ -19,7 +21,9 @@ function HostingPage() {
   return (
     <div>
       <IndexNavbar />
-        
+      <Helmet>
+        <title>Hosting | Orion Innovations Limited</title>
+      </Helmet>
         <div className="main">
         <div className="section section-contact-us text-center" 
         style={{
