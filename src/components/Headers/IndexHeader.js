@@ -2,6 +2,7 @@
 import React from "react";
 import 'font-awesome/css/font-awesome.min.css';
 import { Link } from "react-router-dom";
+import Typical from "react-typical";
 
 // reactstrap components
 import { Container, Button } from "reactstrap";
@@ -11,7 +12,7 @@ function IndexHeader() {
   let pageHeader = React.createRef();
 
   React.useEffect(() => {
-    if (window.innerWidth > 991) {
+    if (window.innerWidth > 991) { 
       const updateScroll = () => {
         let windowScrollTop = window.pageYOffset / 3;
         pageHeader.current.style.transform =
@@ -36,29 +37,55 @@ function IndexHeader() {
         ></div>
         <Container>
           <div className="content-center brand">
-            <img
+            <img data-aos='zoom-in'
               alt="..."
               className="n-logo"
               src={require("assets/img/now-logo.png")}
             ></img>
-            <h1 className="h1-seo">Orion Innovations</h1>
-            <h3>We give our customers exactly what they are looking for</h3>
+            <h1 data-aos='zoom-in' className="h1-seo">Orion Innovations</h1>
+            <h3>
+            <Typical
+            loop={Infinity}
+            wrapper = "b"
+            steps={[
+                'We give our customers exactly what they are looking for',1000
+            ]}
+            >
+            </Typical>
+             </h3>
             <br />
-            <Link to="/gallery">
+            <Link to="/hosting">
             <Button
               className="btn-round mr-1"
               color="neutral"
               outline
+            style={{
+              backgroundColor:"white", color:'black', border:"white"
+            }}
             >
               <i className="fa fa-play" />
-              Gallery
+              Hosting
             </Button>
             </Link>
-            <Link to="/shop">
-            <Button className="btn-round" color="neutral" type="button" outline>
-              Shop
+            <Link to="/services">
+            <Button  className="btn-round" color="black" type="button" outline
+            style={{
+              backgroundColor:"white", color:'black', border:"white"
+            }}
+            >
+              Services
             </Button>
             </Link>
+
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <div data-aos='zoom-out'>
+              <h4>scroll down</h4>
+              <i className = "fa fa-chevron-down"/>
+              </div>
           </div>
           
         </Container>

@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 
 // reactstrap components
 import {
-  UncontrolledTooltip,
   Collapse,
   NavbarBrand,
   Navbar,
@@ -14,10 +13,28 @@ import {
  
 } from "reactstrap";
 
-function NewNavbar() {
-  
+function IndexNavbar() {
+  const [navbarColor, setNavbarColor] = React.useState("");
   const [collapseOpen, setCollapseOpen] = React.useState(false);
- 
+  React.useEffect(() => {
+    const updateNavbarColor = () => {
+      if (
+        document.documentElement.scrollTop > 399 ||
+        document.body.scrollTop > 399
+      ) {
+        setNavbarColor("");
+      } else if (
+        document.documentElement.scrollTop < 400 ||
+        document.body.scrollTop < 400
+      ) {
+        setNavbarColor("");
+      }
+    };
+    window.addEventListener("scroll", updateNavbarColor);
+    return function cleanup() {
+      window.removeEventListener("scroll", updateNavbarColor);
+    };
+  });
   return (
     <div>
       {collapseOpen ? (
@@ -29,17 +46,21 @@ function NewNavbar() {
           }}
         />
       ) : null}
-      <Navbar className={"fixed-top "} expand="lg" color="info">
+      <Navbar className={"fixed-top " + navbarColor} expand="lg" color="info">
         <Container>
           <div className="navbar-translate">
             <NavbarBrand
-              id="navbar-brand"
+            data-placement="bottom"
+            href="/"
             >
-              Orion Innovations
+            
+            <img alt="#" src= {require("../../assets/img/now-logo.png")}
+            style={{maxWidth:"25px", height:"auto", marginTop:"-15px",marginRight:"5px"}}
+            />
+               Orion Innovations
+            
             </NavbarBrand>
-            <UncontrolledTooltip target="#navbar-brand">
-              Best place to get satisfied
-            </UncontrolledTooltip>
+            
             <button
               className="navbar-toggler navbar-toggler"
               onClick={() => {
@@ -110,4 +131,4 @@ function NewNavbar() {
   );
 }
 
-export default NewNavbar;
+export default IndexNavbar;

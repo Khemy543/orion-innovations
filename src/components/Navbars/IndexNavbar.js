@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 
 // reactstrap components
 import {
-  UncontrolledTooltip,
   Collapse,
   NavbarBrand,
   Navbar,
@@ -51,16 +50,17 @@ function IndexNavbar() {
         <Container>
           <div className="navbar-translate">
             <NavbarBrand
-              id="navbar-brand"
+            data-placement="bottom"
+            href="/"
             >
-            <img src= {require("../../assets/img/now-logo.png")}
+            
+            <img alt="#" src= {require("../../assets/img/now-logo.png")}
             style={{maxWidth:"25px", height:"auto", marginTop:"-15px",marginRight:"5px"}}
             />
                Orion Innovations
+            
             </NavbarBrand>
-            <UncontrolledTooltip target="#navbar-brand">
-              Exactly what you are looking for
-            </UncontrolledTooltip>
+            
             <button
               className="navbar-toggler navbar-toggler"
               onClick={() => {

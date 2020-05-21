@@ -1,16 +1,6 @@
 import React from "react";
-
-// reactstrap components
-// import {
-// } from "reactstrap";
-
 // core components
-import NewNavbar from "components/Navbars/NewNavbar.js";
-import DarkFooter from "components/Footers/DarkFooter.js";
-import {
-    Container
-  } from "reactstrap";
-// sections for this page
+import IndexNavbar from "components/Navbars/IndexNavbar.js";
 
 
 function HostingPage() {
@@ -28,17 +18,24 @@ function HostingPage() {
   });
   return (
     <div>
-      <NewNavbar />
+      <IndexNavbar />
         
-        <div className="main" style={{marginTop:"70px"}}>
-        <div className="section section-contact-us text-center">
-            <Container>
-            <h2 className="title">Hello Hosting page</h2>
-            </Container>
+        <div className="main">
+        <div className="section section-contact-us text-center" 
+        style={{
+          background: "linear-gradient(rgba(0, 0, 0, 0.88),rgba(0, 0, 0, 0.88)), url(" + require("../assets/img/header2.jpg") + ") no-repeat fixed",
+          backgroundSize: "cover", width:"100%", height:"100vh"
+          
+        }}
+        data-parallax={true}  
+        >
+        <div className="filter" />
+        <h2 className="sub-title" data-aos='fade-left' style={{marginTop:"18%", color:"white"}}>
+          COMING SOON!
+        </h2>
         </div>
             
         </div>
-        <DarkFooter />
     </div>
   );
 }

@@ -5,11 +5,14 @@ import React from "react";
 // } from "reactstrap";
 
 // core components
-import NewNavbar from "components/Navbars/NewNavbar.js";
+import IndexNavbar from "components/Navbars/IndexNavbar.js";
 import DarkFooter from "components/Footers/DarkFooter.js";
+import CarouselView from "components/Carousel/Carousel.js";
 import {
  
-    Container
+    Container,
+    Row,
+    Col
    
   } from "reactstrap";
 // sections for this page
@@ -30,12 +33,184 @@ function ServicePage() {
   });
   return (
     <div>
-      <NewNavbar />
+      <IndexNavbar />
         
-        <div className="main" style={{marginTop:"70px"}}>
+        <div className="main">
+          <CarouselView/>
         <div className="section section-contact-us text-center">
             <Container>
-            <h2 className="title">Hello Service page</h2>
+            <Row>
+              <Col md="4">
+              <div data-aos='fade-right'>
+                <img alt="#" src={require("../assets/img/services/service3.png")}
+                style={{
+                        maxWidth:"250px",
+                        height:"auto",
+                        marginTop:"-10px"
+                      }}
+                />
+                <h4 style={{color:"black", fontWeight:"500", marginTop:"-20px"}}>Website Design</h4>
+                </div>
+              </Col>
+              
+              <Col md="8">
+              <p style={{
+                marginTop:"20px" , paddingLeft:"60px", borderLeft:"2px solid #00000036"
+              }}
+              data-aos='fade-left'
+              >
+              Larger, yet dramatically thinner. More powerful, but
+                      remarkably power efficient.Larger, yet dramatically thinner. More powerful, but
+                      remarkably power efficient.Larger, yet dramatically thinner. More powerful, but
+                      remarkably power efficient.Larger, yet dramatically thinner. More powerful, but
+                      remarkably power efficient.
+              </p>
+              </Col>
+              </Row>
+              <Row>
+              
+              <Col md="8">
+              <p style={{
+                marginTop:"20px" , paddingRight:"60px", borderRight:"2px solid #00000036"
+              }}
+              data-aos='fade-right'
+              >
+              Larger, yet dramatically thinner. More powerful, but
+                      remarkably power efficient.Larger, yet dramatically thinner. More powerful, but
+                      remarkably power efficient.Larger, yet dramatically thinner. More powerful, but
+                      remarkably power efficient.Larger, yet dramatically thinner. More powerful, but
+                      remarkably power efficient.
+              </p>
+              </Col>
+              <Col md="4">
+              <div data-aos='fade-left'>
+                <img alt="#" src={require("../assets/img/services/service4.png")}
+                style={{
+                        maxWidth:"250px",
+                        height:"auto",
+                        marginTop:"-10px"
+                      }}
+                />
+                <h4 style={{color:"black", fontWeight:"500", marginTop:"-20px"}}>Website Hosting</h4>
+                </div>
+              </Col>
+              
+              </Row>
+              <Row>
+              <Col md="4">
+              <div  data-aos='fade-right'>
+                <img alt="#" src={require("../assets/img/services/service5.png")}
+                style={{
+                        maxWidth:"250px",
+                        height:"auto",
+                        marginTop:"-10px"
+                      }}
+                />
+                <h4 style={{color:"black", fontWeight:"500", marginTop:"-20px"}}>Website Marketing</h4>
+                </div>
+              </Col>
+              
+              <Col md="8">
+              <p style={{
+                marginTop:"20px" , paddingLeft:"60px", borderLeft:"2px solid #00000036"
+              }}
+              data-aos='fade-left'
+              >
+              Larger, yet dramatically thinner. More powerful, but
+                      remarkably power efficient.Larger, yet dramatically thinner. More powerful, but
+                      remarkably power efficient.Larger, yet dramatically thinner. More powerful, but
+                      remarkably power efficient.Larger, yet dramatically thinner. More powerful, but
+                      remarkably power efficient.
+              </p>
+              </Col>
+              </Row>
+              <Row>
+                           
+              <Col md="8">
+              <p style={{
+                marginTop:"20px" , paddingRight:"60px", borderRight:"2px solid #00000036"
+              }}
+              data-aos='fade-right'
+              >
+              Larger, yet dramatically thinner. More powerful, but
+                      remarkably power efficient.Larger, yet dramatically thinner. More powerful, but
+                      remarkably power efficient.Larger, yet dramatically thinner. More powerful, but
+                      remarkably power efficient.Larger, yet dramatically thinner. More powerful, but
+                      remarkably power efficient.
+              </p>
+              </Col>
+              <Col md="4">
+              <div  data-aos='fade-left'>
+                <img alt="#" src={require("../assets/img/services/service3.png")}
+                style={{
+                        maxWidth:"250px",
+                        height:"auto",
+                        marginTop:"-10px"
+                      }}
+                />
+                <h4 style={{color:"black", fontWeight:"500", marginTop:"-20px"}}>Website Renovation and Upgrades</h4>
+              </div>
+              </Col>
+ 
+              </Row>
+              <Row>
+              <Col md="4">
+              <div  data-aos='fade-right'>
+                <img alt="#" src={require("../assets/img/services/service2.png")}
+                style={{
+                        maxWidth:"250px",
+                        height:"auto",
+                        marginTop:"-10px"
+                      }}
+                />
+                <h4 style={{color:"black", fontWeight:"500", marginTop:"-20px"}}>Website Maintenance</h4>
+              </div>
+              </Col>
+              
+              <Col md="8">
+              <p style={{
+                marginTop:"20px" , paddingLeft:"60px", borderLeft:"2px solid #00000036"
+              }}
+              data-aos='fade-left'
+              >
+              Larger, yet dramatically thinner. More powerful, but
+                      remarkably power efficient.Larger, yet dramatically thinner. More powerful, but
+                      remarkably power efficient.Larger, yet dramatically thinner. More powerful, but
+                      remarkably power efficient.Larger, yet dramatically thinner. More powerful, but
+                      remarkably power efficient.
+              </p>
+              </Col>
+              </Row>
+              <Row>
+              
+              <Col md="8">
+              
+              <p style={{
+                marginTop:"20px" , paddingRight:"60px", borderRight:"2px solid #00000036"
+              }}
+              data-aos='fade-right'
+              >
+              Larger, yet dramatically thinner. More powerful, but
+                      remarkably power efficient.Larger, yet dramatically thinner. More powerful, but
+                      remarkably power efficient.Larger, yet dramatically thinner. More powerful, but
+                      remarkably power efficient.Larger, yet dramatically thinner. More powerful, but
+                      remarkably power efficient.
+              </p>
+              </Col>
+              <Col md="4">
+              <div  data-aos='fade-left'>
+                <img alt="#" src={require("../assets/img/services/service9.png")}
+                style={{
+                        maxWidth:"250px",
+                        height:"auto",
+                        marginTop:"-10px"
+                      }}
+                />
+                <h4 style={{color:"black", fontWeight:"500", marginTop:"-20px"}}>Graphic Design and Photography</h4>
+              </div>
+              </Col>
+              
+              </Row>
             </Container>
         </div>
             

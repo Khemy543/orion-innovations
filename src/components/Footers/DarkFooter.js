@@ -1,11 +1,5 @@
-  
 import React from "react";
-//import { Link } from "react-router-dom";
-
-// reactstrap components
-//import { Row, Container } from "reactstrap";
-
-
+import { Link } from "react-router-dom";
 function Footer() {
   return (
     <footer className="page-footer font-small unique-color-dark" style={{backgroundColor:"rgba(30, 30, 30, 0.24) ", paddingTop:"20px"}}>
@@ -32,16 +26,16 @@ function Footer() {
         <h6 className="text-uppercase font-weight-bold">Products</h6>
         <hr className="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto"  style={{width: "60px"}}/>
         <p>
-          <a href="#!" style={{color:"inherit", fontWeight:"500"}}>Website Designing</a>
+          <Link href="#!" style={{color:"inherit", fontWeight:"500", textDecoration:"none"}}>Website Designing</Link>
         </p>
         <p>
-          <a href="#!" style={{color:"inherit", fontWeight:"500"}}>Web Maintenance</a>
+          <Link href="#!" style={{color:"inherit", fontWeight:"500", textDecoration:"none"}}>Web Maintenance</Link>
         </p>
         <p>
-          <a href="#!" style={{color:"inherit", fontWeight:"500"}}>Web Renovating and Upgrades</a>
+          <Link href="#!" style={{color:"inherit", fontWeight:"500", textDecoration:"none"}}>Web Renovating and Upgrades</Link>
         </p>
         <p>
-          <a href="#!" style={{color:"inherit", fontWeight:"500"}}>Website Hosting</a>
+          <Link href="#!" style={{color:"inherit", fontWeight:"500", textDecoration:"none"}}>Website Hosting</Link>
         </p>
 
       </div>
@@ -54,16 +48,16 @@ function Footer() {
         <h6 className="text-uppercase font-weight-bold">Useful links</h6>
         <hr className="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto"  style={{width: "60px"}}/>
         <p>
-          <a href="#!" style={{color:"inherit", fontWeight:"500"}}>Home</a>
+          <Link href="#!" style={{color:"inherit", fontWeight:"500", textDecoration:"none"}}>Home</Link>
         </p>
         <p>
-          <a href="#!" style={{color:"inherit", fontWeight:"500"}}>Services</a>
+          <Link href="#!" style={{color:"inherit", fontWeight:"500", textDecoration:"none"}}>Services</Link>
         </p>
         <p>
-          <a href="#!" style={{color:"inherit", fontWeight:"500"}}>Privacy and Policy</a>
+          <Link href="#!" style={{color:"inherit", fontWeight:"500", textDecoration:"none"}}>Privacy and Policy</Link>
         </p>
         <p>
-          <a href="#!" style={{color:"inherit", fontWeight:"500"}}>Terms and Conditions</a>
+          <Link href="#!" style={{color:"inherit", fontWeight:"500"}}>Terms and Conditions</Link>
         </p>
 
       </div>
@@ -77,31 +71,34 @@ function Footer() {
         <hr className="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto"  style={{width: "60px"}}/>
 
 
-        <a href="https://twitter.com/AkaProductive" target="_blank" rel="noopener noreferrer" style={{color:"inherit", fontWeight:"500"}}>
+        <a href="orioninnovations14@gmail.com" target="_blank" rel="noopener noreferrer" style={{color:"inherit", fontWeight:"500", textDecoration:"none"}}>
+          <p style={{fontWeight:"500"}}>
+          <i className="fa fa-google-plus mr-3" style={{color:"#dd4b39"}}></i>
+           Google</p>
+           </a>
+
+
+        <a href="https://twitter.com/Orion_Inno" target="_blank" rel="noopener noreferrer" style={{color:"inherit", fontWeight:"500", textDecoration:"none"}}>
         <p style={{fontWeight:"500"}}>
-          <i className="fa fa-twitter mr-3" ></i>
+          <i className="fa fa-twitter mr-3" style={{color:"#55acee"}}></i>
            Twitter</p>
         </a>
 
 
-          <a href="#!" style={{color:"inherit", fontWeight:"500"}}>
-          <p style={{fontWeight:"500"}}>
-          <i className="fa fa-facebook mr-3"></i>
-           Facebook</p>
-           </a>
+         
 
 
 
-          <a href="https://www.instagram.com/_akaproductivesolutionsltd/" target="_blank" rel="noopener noreferrer" style={{color:"inherit", fontWeight:"500"}}>
-          <p style={{fontWeight:"500"}}>
-          <i className="fa fa-instagram mr-3"></i>
+          <a href="https://www.instagram.com/orion_innovations?igshid=1rswhp62tqq1w" target="_blank" rel="noopener noreferrer" style={{color:"inherit", fontWeight:"500", textDecoration:"none"}}>
+          <p style={{fontWeight:"500", textDecoration:"none"}}>
+          <i className="fa fa-instagram mr-3" style={{color:"#3f729b"}}></i>
            Instagram</p>
            </a>
 
            
-          <a href="#!" style={{color:"inherit", fontWeight:"500"}}> 
-          <p style={{fontWeight:"500"}}> 
-          <i className="fa fa-linkedin mr-3"></i>
+          <a href="https://www.linkedin.com/company/orion-innovations-ghana"  target="_blank" rel="noopener noreferrer" style={{color:"inherit", fontWeight:"500", textDecoration:"none"}}> 
+          <p style={{fontWeight:"500", textDecoration:"none"}}> 
+          <i className="fa fa-linkedin mr-3"style={{color:"#0976b4"}}></i>
            Linkedin</p>
            </a>
       </div>

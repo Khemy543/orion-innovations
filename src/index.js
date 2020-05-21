@@ -15,35 +15,22 @@
 * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
 */
-import React from "react";
-import ReactDOM from "react-dom";
-import { BrowserRouter, Route, Switch } from "react-router-dom";
-
-// styles for this kit
-import "assets/css/bootstrap.min.css";
-import "assets/scss/now-ui-kit.scss";
-import "assets/demo/demo.css";
-import "assets/demo/nucleo-icons-page-styles.css";
-// pages for this kit
 
 
-import LandingPage from "pages/LandingPage.js";
-import AboutUsPage from "pages/AboutUsPage.js";
-import ServicePage from "pages/ServicePage.js";
-import HostingPage from "pages/HostingPage.js";
-
+import React from 'react';
+import ReactDOM from 'react-dom';
+import './index.css';
+import App from './App';
+import * as serviceWorker from './serviceWorker';
 
 ReactDOM.render(
-  <BrowserRouter>
-   
-        <Switch>
-         <Route exact path='/' component={ LandingPage } />
-         <Route exact path='/about-us' component={ AboutUsPage } />
-         <Route exact path='/services' component={ ServicePage } />
-         <Route exact path='/hosting' component={ HostingPage } />
-        </Switch>
-        
-    
-    </BrowserRouter>,
-  document.getElementById("root")
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>,
+  document.getElementById('root')
 );
+
+// If you want your app to work offline and load faster, you can change
+// unregister() to register() below. Note this comes with some pitfalls.
+// Learn more about service workers: https://bit.ly/CRA-PWA
+serviceWorker.unregister();
