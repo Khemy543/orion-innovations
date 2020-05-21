@@ -60,7 +60,7 @@ cash flow over the next three years.
         </div>
         <div className="section section-progress text-center" style={{marginTop:"-93px"}}>
           <Container>
-            <div  data-aos='fade-left'>
+            <div  data-aos='fade-right'>
               <p style={{textAlign:'left'}}>React</p>
           <Progress value="95" style={{height:"10px", width:"80%"}}/>
           </div>
@@ -70,7 +70,7 @@ cash flow over the next three years.
           <Progress value="75" style={{height:"10px", width:"80%"}}/>
           </div>
           <br/>
-          <div  data-aos='fade-left'>
+          <div  data-aos='fade-right'>
               <p style={{textAlign:'left'}}>HTML</p>
           <Progress value="80" style={{height:"10px", width:"80%"}}/>
           </div>
@@ -98,13 +98,13 @@ cash flow over the next three years.
 
           <div className="section section-founders text-center" style={{marginTop:"-70px"}}>
             <Container>
-            <h3 className="sub-title"  data-aos='zoom-in'>Founders</h3>
+            <h3 className="sub-title">Founders</h3>
             <Row>
               <Col md="4">
-              <h4 className="sub-title"  data-aos='fade-right'> Gideon Assafuah</h4>
+              <h4 className="sub-title"> Gideon Assafuah</h4>
               </Col>
               <Col md="7">
-              <p  data-aos='fade-left' style={{color:"black", fontWeight:"500"}}>
+              <p  style={{color:"black", fontWeight:"500"}}>
               Orion Innovations is a start-up organization offering web and internet services to institutions and companies of all kinds. We offer services in website designing, development, hosting, marketing, maintenance and analysis. 
 We have ventured into the web-service industry to offer superior and unique services to companies. Our experience and expertise in web designs and web sales give us a backing to provide solutions that are currently lacking in the market.
 The high costs of the projects and the focus on bigger companies and institutions could be
@@ -116,10 +116,10 @@ the contributing facto
               <br/>
               <Row>
               <Col md="4">
-              <h4 className="sub-title"  data-aos='fade-right'>Edem Ahadzi</h4>
+              <h4 className="sub-title" >Edem Ahadzi</h4>
               </Col>
               <Col md="7">
-              <p  data-aos='fade-left' style={{color:"black", fontWeight:"500"}}>
+              <p  style={{color:"black", fontWeight:"500"}}>
               Orion Innovations is a start-up organization offering web and internet services to institutions and companies of all kinds. We offer services in website designing, development, hosting, marketing, maintenance and analysis. 
 We have ventured into the web-service industry to offer superior and unique services to companies. Our experience and expertise in web designs and web sales give us a backing to provide solutions that are currently lacking in the market.
 The high costs of the projects and the focus on bigger companies and institutions could be

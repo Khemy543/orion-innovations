@@ -37,6 +37,9 @@ function IndexHeader() {
         ></div>
         <Container>
           <div className="content-center brand">
+            <br/>
+            <br/>
+            
             <img data-aos='zoom-in'
               alt="..."
               className="n-logo"
@@ -62,6 +65,7 @@ function IndexHeader() {
             style={{
               backgroundColor:"white", color:'black', border:"white"
             }}
+           
             >
               <i className="fa fa-play" />
               Hosting
@@ -72,6 +76,7 @@ function IndexHeader() {
             style={{
               backgroundColor:"white", color:'black', border:"white"
             }}
+            
             >
               Services
             </Button>

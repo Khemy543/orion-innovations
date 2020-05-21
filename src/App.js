@@ -10,8 +10,8 @@ import "assets/demo/nucleo-icons-page-styles.css";
 import "./App.css";
 
 //AOS animation
-import AOS from 'aos';
-import 'aos/dist/aos.css';
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 // pages for this kit
 import LandingPage from "pages/LandingPage.js";
@@ -21,7 +21,10 @@ import HostingPage from "pages/HostingPage.js";
 
 
 class App extends React.Component{
-    
+
+    /* constructor(props){
+        super(props);
+    } */
     componentDidMount(){
         AOS.init({
             duration: 1000

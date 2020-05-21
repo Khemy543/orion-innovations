@@ -22,9 +22,6 @@ import {
 //axios
 import axios from "axios";
 
-//Helmet
-import { Helmet } from "react-helmet";
-
 //Cookies
 import { useCookies } from 'react-cookie';
 import CookieConsent from "react-cookie-consent";
@@ -90,9 +87,7 @@ function LandingPage() {
   });
   return (
     <div>
-      <Helmet>
-        <title>Home | Orion Innovations Limited</title>
-      </Helmet>
+      
       <IndexNavbar />
       <div className="wrapper">
         <IndexHeader />
@@ -135,7 +130,7 @@ function LandingPage() {
             <Row>
             
               <Col md="4">
-                  <div data-aos='fade-right'>
+                  <div  data-aos="slide-right" data-aos-delay="400">
                     <img alt="#" src={require("../assets/img/services/service7.jpg")}
                       style={{
                         maxWidth:"250px",
@@ -154,7 +149,7 @@ function LandingPage() {
               </Col>
              
               <Col md="4">
-              <div data-aos='fade-down'>
+              <div data-aos="slide-right" data-aos-delay="200">
                     <img alt="#" src={require("../assets/img/services/service4.png")}
                     style={{
                         maxWidth:"250px",
@@ -172,7 +167,7 @@ function LandingPage() {
                     </div>
               </Col>
               <Col md="4">
-              <div data-aos='fade-left'>
+              <div data-aos="slide-right">
                     <img alt="#" src={require("../assets/img/services/service5.png")}
                     style={{
                         maxWidth:"250px",
@@ -193,7 +188,7 @@ function LandingPage() {
               </Row>
               <Row>
               <Col md="4">
-              <div data-aos='fade-right'>
+              <div data-aos="slide-right" data-aos-delay="400">
                     <img alt="#" src={require("../assets/img/services/service3.png")}
                     style={{
                         maxWidth:"250px",
@@ -212,7 +207,7 @@ function LandingPage() {
               </Col>
               
               <Col md="4">
-              <div data-aos='fade-up'>
+              <div data-aos="slide-right" data-aos-delay="200">
                     <img alt="#" src={require("../assets/img/services/service2.png")}
                     style={{
                         maxWidth:"250px",
@@ -231,7 +226,7 @@ function LandingPage() {
              
               </Col>
               <Col md="4">
-              <div data-aos='fade-left'>
+              <div data-aos="slide-right">
                     <img alt="#" src={require("../assets/img/services/service9.png")}
                     style={{
                         maxWidth:"250px",
@@ -263,7 +258,7 @@ function LandingPage() {
             <Row>
               <Col className="ml-auto mr-auto text-center" md="8">
                 
-                <h5 data-aos='fade-down'>
+                <h5 >
                 It’s not enough to have a good looking websites, your website should be a driving force of your business. A Real marketing tool which promotes your business online and drives customers to prominently view your website from any service they want.
                   
                 </h5>
@@ -273,24 +268,26 @@ function LandingPage() {
             <div className="section-story-overview">
               <Row>
                 <Col md="6">
-                  <div data-aos='fade-right'
+                  <div 
                     className="image-container image-left"
                     style={{
                       backgroundImage:
                         "url(" + require("assets/img/profile.jpg") + ")"
                     }}
+                    data-aos="zoom-in" data-aos-delay="100"
                   >
                     
                   </div>
                   
                 </Col>
                 <Col md="6">
-                  <div data-aos='fade-left'
+                  <div 
                     className="image-container image-right"
                     style={{
                       backgroundImage:
                         "url(" + require("assets/img/landing.jpg") + ")"
                     }}
+                    data-aos="zoom-in" data-aos-delay="200"
                   ></div>
                  
                 </Col>
@@ -323,7 +320,7 @@ function LandingPage() {
            </div>
             </Container>
         </div>      
-        <div className="section section-contact-us text-center">
+        <div className="section section-contact-us text-center" data-aos="fade-right">
           <Container>
             <h2 className="title">Contact Us</h2>
             <p className="description">
@@ -332,7 +329,7 @@ function LandingPage() {
                       
             </p>
             <Row>
-            <Col className="text-center ml-auto mr-auto" lg="6" md="8" data-aos="fade-left">
+            <Col className="text-center ml-auto mr-auto" lg="6" md="8" >
             <Form onSubmit={handleSubmit}>
               <InputGroup
                 className={

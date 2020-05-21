@@ -40,7 +40,7 @@ function ServicePage() {
             <Container>
             <Row>
               <Col md="4">
-              <div data-aos='fade-right'>
+              <div data-aos='zoom-in'>
                 <img alt="#" src={require("../assets/img/services/service3.png")}
                 style={{
                         maxWidth:"250px",
@@ -56,7 +56,7 @@ function ServicePage() {
               <p style={{
                 marginTop:"20px" , paddingLeft:"60px", borderLeft:"2px solid #00000036"
               }}
-              data-aos='fade-left'
+              data-aos='zoom-in'
               >
               Larger, yet dramatically thinner. More powerful, but
                       remarkably power efficient.Larger, yet dramatically thinner. More powerful, but
@@ -72,7 +72,7 @@ function ServicePage() {
               <p style={{
                 marginTop:"20px" , paddingRight:"60px", borderRight:"2px solid #00000036"
               }}
-              data-aos='fade-right'
+              data-aos='zoom-in'
               >
               Larger, yet dramatically thinner. More powerful, but
                       remarkably power efficient.Larger, yet dramatically thinner. More powerful, but
@@ -82,7 +82,7 @@ function ServicePage() {
               </p>
               </Col>
               <Col md="4">
-              <div data-aos='fade-left'>
+              <div data-aos='zoom-in'>
                 <img alt="#" src={require("../assets/img/services/service4.png")}
                 style={{
                         maxWidth:"250px",
@@ -97,7 +97,7 @@ function ServicePage() {
               </Row>
               <Row>
               <Col md="4">
-              <div  data-aos='fade-right'>
+              <div  data-aos='zoom-in'>
                 <img alt="#" src={require("../assets/img/services/service5.png")}
                 style={{
                         maxWidth:"250px",
@@ -113,7 +113,7 @@ function ServicePage() {
               <p style={{
                 marginTop:"20px" , paddingLeft:"60px", borderLeft:"2px solid #00000036"
               }}
-              data-aos='fade-left'
+              data-aos='zoom-in'
               >
               Larger, yet dramatically thinner. More powerful, but
                       remarkably power efficient.Larger, yet dramatically thinner. More powerful, but
@@ -129,7 +129,7 @@ function ServicePage() {
               <p style={{
                 marginTop:"20px" , paddingRight:"60px", borderRight:"2px solid #00000036"
               }}
-              data-aos='fade-right'
+              data-aos='zoom-in'
               >
               Larger, yet dramatically thinner. More powerful, but
                       remarkably power efficient.Larger, yet dramatically thinner. More powerful, but
@@ -139,7 +139,7 @@ function ServicePage() {
               </p>
               </Col>
               <Col md="4">
-              <div  data-aos='fade-left'>
+              <div  data-aos='zoom-in'>
                 <img alt="#" src={require("../assets/img/services/service3.png")}
                 style={{
                         maxWidth:"250px",
@@ -154,7 +154,7 @@ function ServicePage() {
               </Row>
               <Row>
               <Col md="4">
-              <div  data-aos='fade-right'>
+              <div  data-aos='zoom-in'>
                 <img alt="#" src={require("../assets/img/services/service2.png")}
                 style={{
                         maxWidth:"250px",
@@ -170,7 +170,7 @@ function ServicePage() {
               <p style={{
                 marginTop:"20px" , paddingLeft:"60px", borderLeft:"2px solid #00000036"
               }}
-              data-aos='fade-left'
+              data-aos='zoom-in'
               >
               Larger, yet dramatically thinner. More powerful, but
                       remarkably power efficient.Larger, yet dramatically thinner. More powerful, but
@@ -187,7 +187,7 @@ function ServicePage() {
               <p style={{
                 marginTop:"20px" , paddingRight:"60px", borderRight:"2px solid #00000036"
               }}
-              data-aos='fade-right'
+              data-aos='zoom-in'
               >
               Larger, yet dramatically thinner. More powerful, but
                       remarkably power efficient.Larger, yet dramatically thinner. More powerful, but
@@ -197,7 +197,7 @@ function ServicePage() {
               </p>
               </Col>
               <Col md="4">
-              <div  data-aos='fade-left'>
+              <div  data-aos='zoom-in'>
                 <img alt="#" src={require("../assets/img/services/service9.png")}
                 style={{
                         maxWidth:"250px",

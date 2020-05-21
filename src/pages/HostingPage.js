@@ -34,7 +34,7 @@ function HostingPage() {
         data-parallax={true}  
         >
         <div className="filter" />
-        <h2 className="sub-title" data-aos='fade-left' style={{marginTop:"18%", color:"white"}}>
+        <h2 className="sub-title"  style={{marginTop:"18%", color:"white"}}>
           COMING SOON!
         </h2>
         </div>

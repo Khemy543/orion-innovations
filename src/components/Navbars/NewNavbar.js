@@ -2,7 +2,7 @@
 import React from "react";
 //import { Link } from "react-router-dom";
 // nodejs library that concatenates strings
-//import { Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import classnames from "classnames";
 
 
@@ -84,29 +84,58 @@ function NavBar() {
           navbar
           isOpen={navbarCollapse}
         >
-          <Nav navbar>
-            <NavItem>
-              <NavLink  href="/">
-                Home
-              </NavLink>
-            </NavItem>
-            <NavItem>
-              <NavLink  href="/about-us">
-                About Us
-              </NavLink>
-            </NavItem>
-            <NavItem>
-              <NavLink  href="/services">
-                Services
-              </NavLink>
-            </NavItem>
+        <Nav navbar>
+        <NavItem>
+        <Link
+            style={{textDecoration:"none"}}
+            to="/"
+            >
+          <NavLink>
             
-            <NavItem>
-              <NavLink  href="/hosting">
-                Hosting
-              </NavLink>
-            </NavItem>
-          </Nav>
+            Home
+            
+          </NavLink>
+          </Link>
+        </NavItem>
+        <NavItem>
+        <Link
+            style={{textDecoration:"none"}}
+            to = "/about-us">
+          <NavLink>
+          
+            About Us
+            
+          </NavLink>
+          </Link>
+        </NavItem>
+        <NavItem>
+        <Link
+            style={{textDecoration:"none"}}
+            to="/services"
+            >
+          <NavLink>
+          
+            Services
+           
+          </NavLink>
+          </Link>
+        </NavItem>
+        <NavItem>
+        <Link
+            style={{textDecoration:"none"}}
+            to="/hosting"
+            >
+          <NavLink>
+          
+            Hosting
+           
+          </NavLink>
+          </Link>
+        </NavItem>
+        
+        
+       
+      </Nav>
         </Collapse>
       </Container>
     </Navbar>
