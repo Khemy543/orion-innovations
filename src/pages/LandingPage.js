@@ -22,6 +22,9 @@ import {
 //axios
 import axios from "axios";
 
+//Cookies
+import { useCookies } from 'react-cookie';
+import CookieConsent from "react-cookie-consent";
 
 axios.defaults.withCredentials = true;
 //axios.defaults.headers.common['Auth-Token'] = 'foo bar';
@@ -45,6 +48,7 @@ function LandingPage() {
   const [message, setMessage] = useState("");
   const [alertpop, setAlertpop] = useState(false);
   const [modal, setModal] = useState(false);
+  const [cookies, setCookie] = useCookies(['name']);
 
   const toggle =() => setModal(!modal);
 
@@ -87,7 +91,22 @@ function LandingPage() {
       <div className="wrapper">
         <IndexHeader />
         <div className="main">
-        
+        <CookieConsent
+        location="bottom"
+        buttonText="I understand"
+        cookieName="myAwesomeCookieName1"
+        style={{ background: "rgb(44, 168, 255)" }}
+        buttonStyle={{ backgroundColor:"rgb(44, 168, 255)", color: "white", fontSize: "13px" , borderRadius:"4px", border:"1px solid white"}}
+        expires={150000}
+    >
+    This website uses cookies to ensure you get the best experience on our website.{" "}
+    <div>
+    <a href ="#!" style={{ fontSize: "12px",fontWeight:"500" }}>
+    Learn more
+    </a>
+    </div>
+    
+    </CookieConsent>
         </div> 
         <div className="section section-contact-us text-center">
           <Container>
@@ -326,7 +345,9 @@ function LandingPage() {
                   onBlur={() => setFirstFocus(false)}
                   name="name"
                   value={name}
-                  onChange={e => setName(e.target.value)}
+                  onChange={
+                    e => {setName(e.target.value)
+                    setCookie('name', e.target.value, { path: '/' });}}
                 ></Input>
               </InputGroup>
               <InputGroup
@@ -384,7 +405,7 @@ function LandingPage() {
                         :
                         <div>
                         <i className="fa fa-check-circle" style={{fontSize:"56px",color:"rgba(1, 137, 254, 0.9)",marginTop:"50px", marginRight:"50px", marginLeft:"80px", marginBottom:"50px"}}></i>
-                        
+                        {console.log(cookies.name) }
                         </div>
                       }
                       
