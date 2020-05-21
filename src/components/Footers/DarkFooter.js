@@ -26,17 +26,18 @@ function Footer() {
         <h6 className="text-uppercase font-weight-bold">Products</h6>
         <hr className="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto"  style={{width: "60px"}}/>
         <p>
-          <Link href="#!" style={{color:"inherit", fontWeight:"500", textDecoration:"none"}}>Website Designing</Link>
+          <Link to="#" style={{color:"inherit", fontWeight:"500", textDecoration:"none"}}>Website Designing</Link>
         </p>
         <p>
-          <Link href="#!" style={{color:"inherit", fontWeight:"500", textDecoration:"none"}}>Web Maintenance</Link>
+          <Link to="#" style={{color:"inherit", fontWeight:"500", textDecoration:"none"}}>Web Maintenance</Link>
         </p>
         <p>
-          <Link href="#!" style={{color:"inherit", fontWeight:"500", textDecoration:"none"}}>Web Renovating and Upgrades</Link>
+          <Link to="#" style={{color:"inherit", fontWeight:"500", textDecoration:"none"}}>Web Renovating and Upgrades</Link>
         </p>
         <p>
-          <Link href="#!" style={{color:"inherit", fontWeight:"500", textDecoration:"none"}}>Website Hosting</Link>
+          <Link to="#" style={{color:"inherit", fontWeight:"500", textDecoration:"none"}}>Website Hosting</Link>
         </p>
+        
 
       </div>
       
@@ -48,16 +49,16 @@ function Footer() {
         <h6 className="text-uppercase font-weight-bold">Useful links</h6>
         <hr className="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto"  style={{width: "60px"}}/>
         <p>
-          <Link href="#!" style={{color:"inherit", fontWeight:"500", textDecoration:"none"}}>Home</Link>
+          <Link to="#!" style={{color:"inherit", fontWeight:"500", textDecoration:"none"}}>Home</Link>
         </p>
         <p>
-          <Link href="#!" style={{color:"inherit", fontWeight:"500", textDecoration:"none"}}>Services</Link>
+          <Link to="#!" style={{color:"inherit", fontWeight:"500", textDecoration:"none"}}>Services</Link>
         </p>
         <p>
-          <Link href="#!" style={{color:"inherit", fontWeight:"500", textDecoration:"none"}}>Privacy and Policy</Link>
+          <Link to="#!" style={{color:"inherit", fontWeight:"500", textDecoration:"none"}}>Privacy and Policy</Link>
         </p>
         <p>
-          <Link href="#!" style={{color:"inherit", fontWeight:"500"}}>Terms and Conditions</Link>
+          <Link to="#!" style={{color:"inherit", fontWeight:"500"}}>Terms and Conditions</Link>
         </p>
 
       </div>
