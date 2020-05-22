@@ -1,0 +1,13 @@
+.zoom{
+    max-width:250px;
+    height:auto;
+    transition: transform .4s;
+}
+
+.zoom:hover{
+    transform: scale(1.07);
+    cursor: pointer;
+}
+body{
+    font-family: "Montserrat", "Helvetica", Arial, sans-serif;
+}

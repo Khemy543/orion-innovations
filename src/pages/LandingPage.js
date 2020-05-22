@@ -16,12 +16,15 @@ import {
     Col,
     Form,
     Modal,
-    Spinner
+    Spinner, 
+    UncontrolledTooltip
   } from "reactstrap";
 
 //axios
 import axios from "axios";
 
+//helmet
+import { Helmet } from "react-helmet";
 //Cookies
 import { useCookies } from 'react-cookie';
 import CookieConsent from "react-cookie-consent";
@@ -87,7 +90,9 @@ function LandingPage() {
   });
   return (
     <div>
-      
+      <Helmet>
+      <title>Home | Orion Innovations Limited</title>
+        </Helmet>
       <IndexNavbar />
       <div className="wrapper">
         <IndexHeader />
@@ -95,7 +100,7 @@ function LandingPage() {
         <CookieConsent
         location="bottom"
         buttonText="I understand"
-        cookieName="myAwesomeCookieName1"
+        cookieName="myAwesomeCookieName7"
         style={{ background: "rgb(44, 168, 255)" }}
         buttonStyle={{ backgroundColor:"rgb(44, 168, 255)", color: "white", fontSize: "13px" , borderRadius:"4px", border:"1px solid white"}}
         expires={150000}
@@ -112,11 +117,11 @@ function LandingPage() {
         <div className="section section-contact-us text-center">
           <Container>
           <h4 className="sub-title">WEB DESIGN COMPANY | WEB DEVELOPMENT | WEB MAINTENANCE</h4>
-          <h2 className="title">TOP CLASS WEB DESIGN AND MAINTENANCE COMPANY AND DIGITAL MARKETING</h2>
+          <h2 className="title">TOP CLASS WEB DESIGN, MAINTENANCE AND DIGITAL MARKETING COMPANY</h2>
           <p  style={{color:"black", fontWeight:"inherit"}} >
-          Orion Innovations is a start-up organization that aims to provide website designs and services to clients and companies all over the world. We at Orion Innovations are positive that anyone who leverages on our business will remain happy and interested.
-          Orion Innovations is a start-up organization that aims to provide website designs and services to clients and companies all over the world. We at Orion Innovations are positive that anyone who leverages on our business will remain happy and interested.
-          Orion Innovations is a start-up organization that aims to provide website designs and services to clients and companies all over the world. We at Orion Innovations are positive that anyone who leverages on our business will remain happy and intere
+          Orion Innovations is a start-up organization offering web and internet services to institutions and companies of all kinds. We offer services in website designing, development, hosting, marketing, maintenance and analysis. 
+We have ventured into the web-service industry to offer superior and unique services to companies. Our experience and expertise in web designs and web sales give us a backing to provide solutions that are currently lacking in the market.
+We at Orion Innovations are positive that anyone who leverages on our business will remain happy and interested.
           </p>
             </Container>
           </div>
@@ -132,16 +137,14 @@ function LandingPage() {
               <Col md="4">
                   <div  data-aos="slide-right" data-aos-delay="400">
                     <img alt="#" src={require("../assets/img/services/service7.jpg")}
-                      style={{
-                        maxWidth:"250px",
-                        height:"auto"
-                      }}
+                     
+                      className="zoom"
                     />
-                    <div className="description" style={{marginTop:"-50px"}}>
+                    <div className="description" style={{marginTop:"-30px"}}>
                     <h4 style={{color:"black", fontWeight:"500"}}>Website Design</h4>
-                    <p style={{color:"rgba(0, 0, 0, 0.62)", fontWeight:"500"}}>
-                      Larger, yet dramatically thinner. More powerful, but
-                      remarkably power efficient.
+                    <p className="sub-title" style={{color:"rgba(0, 0, 0, 0.62)", fontWeight:"500"}}>
+                      Strategically planned and innovative website designs to help your company ot business
+                      move to the next level
                     </p>
                     
                   </div>
@@ -151,14 +154,12 @@ function LandingPage() {
               <Col md="4">
               <div data-aos="slide-right" data-aos-delay="200">
                     <img alt="#" src={require("../assets/img/services/service4.png")}
-                    style={{
-                        maxWidth:"250px",
-                        height:"auto"
-                      }}
+                    
+                       className="zoom"
                     />
-                    <div className="description" style={{marginTop:"-50px"}}>
+                    <div className="description" style={{marginTop:"-30px"}}>
                     <h4 style={{color:"black", fontWeight:"500"}}>Website Hosting</h4>
-                    <p style={{color:"rgba(0, 0, 0, 0.62)", fontWeight:"500"}}> 
+                    <p className="sub-title" style={{color:"rgba(0, 0, 0, 0.62)", fontWeight:"500"}}> 
                       Larger, yet dramatically thinner. More powerful, but
                       remarkably power efficient.
                     </p>
@@ -169,16 +170,13 @@ function LandingPage() {
               <Col md="4">
               <div data-aos="slide-right">
                     <img alt="#" src={require("../assets/img/services/service5.png")}
-                    style={{
-                        maxWidth:"250px",
-                        height:"auto"
-                      }}
+                   
+                      className="zoom"
                     />
-                    <div className="description" style={{marginTop:"-50px"}}>
+                    <div className="description" style={{marginTop:"-30px"}}>
                     <h4 style={{color:"black", fontWeight:"500"}}>Website Marketing</h4>
-                    <p style={{color:"rgba(0, 0, 0, 0.62)", fontWeight:"500"}}>
-                      Larger, yet dramatically thinner. More powerful, but
-                      remarkably power efficient.
+                    <p className="sub-title" style={{color:"rgba(0, 0, 0, 0.62)", fontWeight:"500"}}>
+                      Digital marketing of web services on digital and media platforms to promote products and services
                     </p>
                     
                   </div>
@@ -190,14 +188,12 @@ function LandingPage() {
               <Col md="4">
               <div data-aos="slide-right" data-aos-delay="400">
                     <img alt="#" src={require("../assets/img/services/service3.png")}
-                    style={{
-                        maxWidth:"250px",
-                        height:"auto"
-                      }}
+                   
+                      className="zoom"
                     />
-                    <div className="description" style={{marginTop:"-50px"}}>
+                    <div className="description" style={{marginTop:"-30px"}}>
                     <h4 style={{color:"black", fontWeight:"500"}}>Website Upgrades and Renovations</h4>
-                    <p style={{color:"rgba(0, 0, 0, 0.62)", fontWeight:"500"}}>
+                    <p className="sub-title" style={{color:"rgba(0, 0, 0, 0.62)", fontWeight:"500"}}>
                       Larger, yet dramatically thinner. More powerful, but
                       remarkably power efficient.
                     </p>
@@ -209,16 +205,13 @@ function LandingPage() {
               <Col md="4">
               <div data-aos="slide-right" data-aos-delay="200">
                     <img alt="#" src={require("../assets/img/services/service2.png")}
-                    style={{
-                        maxWidth:"250px",
-                        height:"auto"
-                      }}
+                   
+                      className="zoom"
                     />
                     <div className="description" style={{marginTop:"-50px"}}>
                     <h4 style={{color:"black", fontWeight:"500"}}>Website Maintenance</h4>
-                    <p style={{color:"rgba(0, 0, 0, 0.62)", fontWeight:"500"}}>
-                      Larger, yet dramatically thinner. More powerful, but
-                      remarkably power efficient.
+                    <p className="sub-title" style={{color:"rgba(0, 0, 0, 0.62)", fontWeight:"500"}}>
+                      Regular house cleaning for problems that may arise on your website and keep it up to date for a smooth running business
                     </p>
                     
                   </div>
@@ -228,14 +221,12 @@ function LandingPage() {
               <Col md="4">
               <div data-aos="slide-right">
                     <img alt="#" src={require("../assets/img/services/service9.png")}
-                    style={{
-                        maxWidth:"250px",
-                        height:"auto"
-                      }}
+                   
+                      className="zoom"
                     />
-                    <div className="description" style={{marginTop:"-50px"}}>
+                    <div className="description" style={{marginTop:"-30px"}}>
                     <h4 style={{color:"black", fontWeight:"500"}}>Graphic designs and Photography</h4>
-                    <p style={{color:"rgba(0, 0, 0, 0.62)", fontWeight:"500"}}>
+                    <p className="sub-title" style={{color:"rgba(0, 0, 0, 0.62)", fontWeight:"500"}}>
                       Larger, yet dramatically thinner. More powerful, but
                       remarkably power efficient.
                     </p>
@@ -248,7 +239,50 @@ function LandingPage() {
               
             </Container>
         </div>
-        <div className="section section-about-us"
+        
+
+        <div className="section section-dark section-nucleo-icons" style={{backgroundColor:"#0b1011"}}>
+        <Container style={{marginBottom:"40px"}}>
+          <Row>
+            <Col lg="6" md="12" data-aos="fade-right" data-aos-delay="200">
+              <h2 className="sub-title" style={{color:"white"}}>Our Promises</h2>
+              <br />
+              <p className="description" style={{marginTop:"-30px"}}>
+               <p><i className="fa fa-check-square-o" style={{marginRight:"10px"}}/>Beautiful Designs</p>
+               <p style={{fontSize:"17px"}}>It all starts with a beautifully branded design that will help your business project a professional online image</p>
+               <p><i className="fa fa-check-square-o" style={{marginRight:"10px"}}/>Latest Technology</p>
+               <p style={{fontSize:"17px"}}>All of our websites use HTML5 and CSS3, are optimised for all devices and hosted on Google App Engine.</p>
+               <p><i className="fa fa-check-square-o" style={{marginRight:"10px"}}/>Simple process</p>
+               <p style={{fontSize:"17px"}}>It all starts with a beautifully branded design that will help your business project a professional online image</p>
+              </p>
+             
+             
+            </Col>
+            <Col lg="6" md="12">
+              <div className="icons-container" style={{marginTop:"30px"}}>
+                <i className="fa fa-clock-o" data-aos="zoom-in" data-aos-delay="500" style={{color:"#0976b4"}}/>
+                <i className="fa fa-cloud-download" data-aos="zoom-in"data-aos-delay="500" style={{color:"#dd4b39"}}/>
+                <i className="fa fa-camera" data-aos="zoom-in"data-aos-delay="500" style={{color:"rgb(9, 180, 70)"}}/>
+                <i className="fa fa-key" data-aos="zoom-in" data-aos-delay="500" style={{color:"rgb(9, 180, 70)"}}/>
+                <i className="fa fa-address-card" data-aos="zoom-in" data-aos-delay="500" style={{color:"#55acee"}}/>
+                <i className="fa fa-thumbs-o-up" style={{color:"white"}} data-aos="zoom-in" data-aos-delay="500"/>
+                <i className="fa fa-lightbulb-o" data-aos="zoom-in" data-aos-delay="500" style={{color:"#0976b4"}}/>
+                <i className="fa fa-heart-o" data-aos="zoom-in" data-aos-delay="500" style={{color:"#dd4b39"}}/>
+                <i className="fa fa-balance-scale" data-aos="zoom-in" data-aos-delay="500" style={{color:"rgb(9, 180, 70)"}}/>
+                <i className="fa fa-calendar-check-o" data-aos="zoom-in" data-aos-delay="500" style={{color:"rgb(249, 207, 0)"}}/>
+                <i className="fa fa-commenting-o" data-aos="zoom-in" data-aos-delay="500" style={{color:"#0976b4"}} />
+                <i className="fa fa-database" data-aos="zoom-in" data-aos-delay="500" style={{color:"#dd4b39"}}/>
+                <i className="fa fa-desktop" data-aos="zoom-in" data-aos-delay="500" style={{color:"rgb(9, 180, 70)"}}/>
+                <i className="fa fa-snowflake-o" data-aos="zoom-in" data-aos-delay="500" style={{color:"rgb(249, 207, 0)"}}/>
+                <i className="fa fa-star-o" data-aos="zoom-in" data-aos-delay="500" style={{color:"rgb(249, 207, 0)"}}/>
+              </div>
+            </Col>
+          </Row>
+        </Container>
+      </div>
+      
+
+      <div className="section section-about-us"
         style={{
           marginTop:"-70px"
 
@@ -420,6 +454,68 @@ function LandingPage() {
           </Row>
           </Container>
         </div>
+
+        <div className="section">
+        <Container className="text-center">
+         
+          <Row className="justify-content-md-center sharing-area text-center" style={{marginTop:"-100px"}}>
+            <Col className="text-center" lg="8" md="12">
+              <h3>Thank you for supporting us!</h3>
+            </Col>
+            <Col className="text-center" lg="8" md="12">
+              <Button
+                className="twitter-sharrre btn-round"
+                style={{backgroundColor:"#55acee"}}
+                href="#pablo"
+                id="tooltip3373767"
+                onClick={e => e.preventDefault()}
+              >
+                <i className="fa fa-twitter"/> Twitter
+              </Button>
+              <UncontrolledTooltip delay={0} target="tooltip3373767">
+                Tweet!
+              </UncontrolledTooltip>
+              <Button
+                className="linkedin-sharrre btn-round  ml-2"
+                style={{backgroundColor:"#dd4b39"}}
+                href="#pablo"
+                id="tooltip840791273"
+                onClick={e => e.preventDefault()}
+              >
+                <i className="fa fa-google-plus" /> Google
+              </Button>
+              <UncontrolledTooltip delay={0} target="tooltip840791273">
+                Share!
+              </UncontrolledTooltip>
+              <Button
+                className="facebook-sharrre btn-round ml-2"
+                style={{backgroundColor:"#0976b4"}}
+                href="#pablo"
+                id="tooltip68961360"
+                onClick={e => e.preventDefault()}
+              >
+                <i className="fa fa-linkedin" /> Linkedin
+              </Button>
+              <UncontrolledTooltip delay={0} target="tooltip68961360">
+                Share on Linkedin
+              </UncontrolledTooltip>
+              <Button
+                className="sharrre btn-round ml-2"
+                style={{backgroundColor:"#3f729b"}}
+                href="https://github.com/creativetimofficial/paper-kit-react?ref=creativetim"
+                target="_blank"
+                id="tooltip864353654"
+              >
+                <i className="fa fa-github" /> Instagram
+              </Button>
+              <UncontrolledTooltip delay={0} target="tooltip864353654">
+                Share!
+              </UncontrolledTooltip>
+            </Col>
+          </Row>
+        </Container>
+      </div>
+
       </div>
       <DarkFooter />
     </div>

@@ -12,7 +12,9 @@ import {
     Container,
     Progress,
     Row,
-    Col
+    Col,
+    Button,
+    UncontrolledTooltip
    
   } from "reactstrap";
 
@@ -58,8 +60,9 @@ cash flow over the next three years.
             </p>
             </Container>
         </div>
-        <div className="section section-progress text-center" style={{marginTop:"-93px"}}>
+        <div className="section section-progress text-center" >
           <Container>
+            <div style={{marginTop:"-140px"}}>
             <div  data-aos='fade-right'>
               <p style={{textAlign:'left'}}>React</p>
           <Progress value="95" style={{height:"10px", width:"80%"}}/>
@@ -79,6 +82,7 @@ cash flow over the next three years.
               <p style={{textAlign:'left'}}>JavaScript</p>
           <Progress value="85" style={{height:"10px", width:"80%"}}/>
           </div>
+          </div>
             </Container>
           </div>
 
@@ -95,40 +99,9 @@ cash flow over the next three years.
         <h2 style={{color:"white"}}>Your Project is very inmportant to us!</h2>
         <h3 style={{color:"white"}}>Move your Business to the next level</h3>
         </div>
-
-          <div className="section section-founders text-center" style={{marginTop:"-70px"}}>
-            <Container>
-            <h3 className="sub-title">Founders</h3>
-            <Row>
-              <Col md="4">
-              <h4 className="sub-title"> Gideon Assafuah</h4>
-              </Col>
-              <Col md="7">
-              <p  style={{color:"black", fontWeight:"500"}}>
-              Orion Innovations is a start-up organization offering web and internet services to institutions and companies of all kinds. We offer services in website designing, development, hosting, marketing, maintenance and analysis. 
-We have ventured into the web-service industry to offer superior and unique services to companies. Our experience and expertise in web designs and web sales give us a backing to provide solutions that are currently lacking in the market.
-The high costs of the projects and the focus on bigger companies and institutions could be
-the contributing facto
-                </p>
-              </Col>
-              </Row>
-              <br/>
-              <br/>
-              <Row>
-              <Col md="4">
-              <h4 className="sub-title" >Edem Ahadzi</h4>
-              </Col>
-              <Col md="7">
-              <p  style={{color:"black", fontWeight:"500"}}>
-              Orion Innovations is a start-up organization offering web and internet services to institutions and companies of all kinds. We offer services in website designing, development, hosting, marketing, maintenance and analysis. 
-We have ventured into the web-service industry to offer superior and unique services to companies. Our experience and expertise in web designs and web sales give us a backing to provide solutions that are currently lacking in the market.
-The high costs of the projects and the focus on bigger companies and institutions could be
-the contributing facto
-                </p>
-              </Col>
-              </Row>
-              </Container>
-            </div>
+        
+        
+          
             
         </div>
         <DarkFooter />
