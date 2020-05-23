@@ -62,8 +62,8 @@ function NavBar() {
             href="/"
           >
             
-            <img alt="#" src={require("../../assets/img/now-logo.png")} 
-            style={{maxWidth:"25px", height:"auto", marginTop:"-15px",marginRight:"5px"}}
+            <img alt="#" src={require("../../assets/img/KHM.png")} 
+            style={{maxWidth:"40px", height:"auto", marginTop:"-5px",marginRight:"8px"}}
             />
             Orion Innovations
           </NavbarBrand>

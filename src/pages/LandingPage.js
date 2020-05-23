@@ -506,7 +506,7 @@ We at Orion Innovations are positive that anyone who leverages on our business w
                 target="_blank"
                 id="tooltip864353654"
               >
-                <i className="fa fa-github" /> Instagram
+                <i className="fa fa-instagram" /> Instagram
               </Button>
               <UncontrolledTooltip delay={0} target="tooltip864353654">
                 Share!

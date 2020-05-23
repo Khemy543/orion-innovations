@@ -31,7 +31,7 @@ function IndexHeader() {
         <div
           className="page-header-image"
           style={{
-            backgroundImage: "url(" + require("assets/img/header.jpg") + ")"
+            backgroundImage: "url(" + require("assets/img/header4.jpg") + ")"
           }}
           ref={pageHeader}
         ></div>
@@ -39,11 +39,11 @@ function IndexHeader() {
           <div className="content-center brand">
             <br/>
             <br/>
-            
+            <br/>
             <img data-aos='zoom-in'
               alt="..."
               className="n-logo"
-              src={require("assets/img/now-logo.png")}
+              src={require("assets/img/KHM.png")}
             ></img>
             <h1 data-aos='zoom-in' className="h1-seo">Orion Innovations</h1>
             <h3>
