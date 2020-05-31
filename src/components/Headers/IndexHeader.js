@@ -40,22 +40,28 @@ function IndexHeader() {
             <br/>
             <br/>
             <br/>
+            <br/>
+            <br/>
             <img data-aos='zoom-in'
               alt="..."
               className="n-logo"
-              src={require("assets/img/KHM.png")}
+              src={require("assets/img/orion.png")}
             ></img>
-            <h1 data-aos='zoom-in' className="h1-seo">Orion Innovations</h1>
-            <h3>
+            <h3  style={{}}>Get a professionally built website</h3>
+            <h1 className="h1-seo" style={{fontSize:"60px"}}>
             <Typical
             loop={Infinity}
             wrapper = "b"
             steps={[
-                'We give our customers exactly what they are looking for',1000
+                'For your business',1000,
+                'For your blog', 1000,
+                'For your start-up', 1000,
+                'For your company', 1000,
+                'For your e-commernce', 1000,
             ]}
             >
             </Typical>
-             </h3>
+             </h1>
             
             <Link to="/hosting">
             <Button
@@ -63,20 +69,20 @@ function IndexHeader() {
               color="neutral"
               outline
             style={{
-              backgroundColor:"white", color:'black', border:"white"
+              fontSize:"13px", fontWeight:"510"
             }}
-           
+           id="buttons"
             >
-              <i className="fa fa-play" />
+              <i className="fa fa-play" style={{marginRight:"7px"}}/>
               Hosting
             </Button>
             </Link>
             <Link to="/services">
             <Button  className="btn-round" color="black" type="button" outline
             style={{
-              backgroundColor:"white", color:'black', border:"white"
+              fontSize:"13px", fontWeight:"600"
             }}
-            
+            id="buttons"
             >
               Services
             </Button>

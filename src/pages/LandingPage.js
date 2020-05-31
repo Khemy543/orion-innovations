@@ -1,5 +1,6 @@
 import React,{useState}from "react";
 
+import Slider from "react-slick";
 
 // core components
 import IndexNavbar from "components/Navbars/IndexNavbar.js";
@@ -17,7 +18,8 @@ import {
     Form,
     Modal,
     Spinner, 
-    UncontrolledTooltip
+    UncontrolledTooltip,
+    Card, CardBody, CardTitle, CardText
   } from "reactstrap";
 
 //axios
@@ -55,6 +57,24 @@ function LandingPage() {
 
   const toggle =() => setModal(!modal);
 
+  // Slide settings
+  var settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    autoplay:true,
+    responsive:[
+      {
+        breakpoint:450,
+        settings:{
+            centerMode:true,
+            slidesToShow:1
+        }
+      }
+    ]
+  };
   //handle submit
   const handleSubmit = (e) =>{
     e.preventDefault();
@@ -353,8 +373,81 @@ We at Orion Innovations are positive that anyone who leverages on our business w
            <i className="fa fa-instagram mr-3 fa-2x"style={{color:"#3f729b"}}/>
            </div>
             </Container>
-        </div>      
-        <div className="section section-contact-us text-center" data-aos="fade-right">
+        </div> 
+        
+        <div className="section" style={{marginTop:"50px"}}>
+        <Container>
+          <Row>
+            <Col md="12">
+        <Slider {...settings}>
+        <div>
+        <Card style={{maxWidth:"300px", border:"1px solid #f8f9fa"}}>
+        
+        <img alt="#" src={require("../assets/img/orion.png")} style={{borderRadius:"100%", width:"50px", height:"50px",
+        marginTop:"10px", marginLeft:"15px"
+        }}/>
+        <CardBody>
+
+        <CardTitle style={{fontWeight:"bold"}}>C.E.O Orion Innovations</CardTitle>
+        <CardText style={{fontSize:"14px"}}>
+        Great work with beautiful color matching. I didnt know website could be delivered this quick.
+        </CardText>
+        </CardBody>
+      </Card>
+        </div>
+        <div>
+        <Card style={{maxWidth:"300px", border:"1px solid #f8f9fa"}}>
+        
+        <img alt="#" src={require("../assets/img/aka.PNG")} style={{ width:"80px", height:"50px",
+        marginTop:"10px", marginLeft:"15px"
+        }}/>
+        <CardBody>
+
+        <CardTitle style={{fontWeight:"bold"}}>C.E.O AKA Productive Solutions</CardTitle>
+        <CardText style={{fontSize:"14px"}}>
+        Great work with beautiful color matching. I didnt know website could be delivered this quick.
+        </CardText>
+        </CardBody>
+      </Card>
+        </div>
+        <div>
+        <Card style={{maxWidth:"300px", border:"1px solid #f8f9fa"}}>
+        
+        <img alt="#" src={require("../assets/img/martek.jpg")} style={{borderRadius:"100%", width:"80px", height:"50px",
+        marginTop:"10px", marginLeft:"15px"
+        }}/>
+        <CardBody>
+
+        <CardTitle style={{fontWeight:"bold"}}>C.E.O Martek</CardTitle>
+        <CardText style={{fontSize:"14px"}}>
+        Great work with beautiful color matching. I didnt know website could be delivered this quick.
+        </CardText>
+        </CardBody>
+      </Card>
+        </div>
+        <div>
+        <Card style={{maxWidth:"300px", border:"1px solid #f8f9fa"}}>
+        
+        <img alt="#" src={require("../assets/img/frank.jpg")} style={{ width:"60px", height:"50px",
+        marginTop:"10px", marginLeft:"15px"
+        }}/>
+        <CardBody>
+
+        <CardTitle style={{fontWeight:"bold"}}>C.E.O Franks Assafuah Enterprise</CardTitle>
+        <CardText style={{fontSize:"14px"}}>
+        Great work with beautiful color matching. I didnt know website could be delivered this quick.
+        </CardText>
+        </CardBody>
+      </Card>
+        </div>
+      </Slider>
+      </Col>
+      </Row>
+      </Container>
+          </div> 
+
+
+        <div className="section section-contact-us text-center" data-aos="fade-right" style={{marginTop:"-50px"}}>
           <Container>
             <h2 className="title">Contact Us</h2>
             <p className="description">

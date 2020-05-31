@@ -13,6 +13,9 @@ import "./App.css";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
+//Slide css
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 // pages for this kit
 import LandingPage from "pages/LandingPage.js";
 import AboutUsPage from "pages/AboutUsPage.js";

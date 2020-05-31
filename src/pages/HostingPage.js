@@ -23,7 +23,7 @@ function HostingPage() {
       <IndexNavbar />
       <Helmet>
         <title>Hosting | Orion Innovations Limited</title>
-      </Helmet>
+      </Helmet> 
         <div className="main">
         <div className="section section-contact-us text-center" 
         style={{

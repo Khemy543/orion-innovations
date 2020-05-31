@@ -54,10 +54,10 @@ function IndexNavbar() {
             href="/"
             >
             
-            <img alt="#" src= {require("../../assets/img/KHM.png")}
-            style={{maxWidth:"40px", height:"auto", marginTop:"-5px",marginRight:"8px"}}
+            <img alt="#" src= {require("../../assets/img/orion-logo.png")}
+            style={{maxWidth:"auto", height:"18px", marginTop:"-5px",marginRight:"8px"}}
             />
-               Orion Innovations
+               
             
             </NavbarBrand>
             
