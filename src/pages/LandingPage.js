@@ -271,7 +271,7 @@ We at Orion Innovations are positive that anyone who leverages on our business w
                <p><i className="fa fa-check-square-o" style={{marginRight:"10px"}}/>Beautiful Designs</p>
                <p style={{fontSize:"17px"}}>It all starts with a beautifully branded design that will help your business project a professional online image</p>
                <p><i className="fa fa-check-square-o" style={{marginRight:"10px"}}/>Latest Technology</p>
-               <p style={{fontSize:"17px"}}>All of our websites use HTML5 and CSS3, are optimised for all devices and hosted on Google App Engine.</p>
+               <p style={{fontSize:"17px"}}>We use React Js for all our website designs with CSS3 sytling with latest React frameworks.</p>
                <p><i className="fa fa-check-square-o" style={{marginRight:"10px"}}/>Simple process</p>
                <p style={{fontSize:"17px"}}>It all starts with a beautifully branded design that will help your business project a professional online image</p>
               </p>

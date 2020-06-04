@@ -93,7 +93,7 @@ cash flow over the next three years.
         >
         <div className="filter" />
         <h3 style={{color:"white"}}>We love what we do</h3>
-        <h2 style={{color:"white"}}>Your Project is very inmportant to us!</h2>
+        <h2 style={{color:"white"}}>Your Project is very important to us!</h2>
         <h3 style={{color:"white"}}>Move your Business to the next level</h3>
         </div>
         
