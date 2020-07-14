@@ -59,13 +59,15 @@ function NavBar() {
         <div className="navbar-translate">
           <NavbarBrand
             data-placement="bottom"
-            href="/"
+            
           >
+          <Link to="/">
             
             <img alt="#" src={require("../../assets/img/KHM.png")} 
             style={{maxWidth:"40px", height:"auto", marginTop:"-5px",marginRight:"8px"}}
             />
             Orion Innovations
+            </Link>
           </NavbarBrand>
           <button
             aria-expanded={navbarCollapse}

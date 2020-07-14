@@ -36,32 +36,30 @@ function IndexHeader() {
           ref={pageHeader}
         ></div>
         <Container>
-          <div className="content-center brand">
-            <br/>
-            <br/>
-            <br/>
-            <br/>
-            <br/>
-            <img data-aos='zoom-in'
+          <div className="content-center brand" style={{marginTop:"35px"}}>
+            <div style={{marginTop:"100px"}}>
+            <img 
               alt="..."
               className="n-logo"
               src={require("assets/img/orion.png")}
             ></img>
-            <h3  style={{}}>Get a professionally built website</h3>
-            <h1 className="h1-seo" style={{fontSize:"60px"}}>
+            <h3  style={{}}>Get a professionally built website for your</h3>
+            <div style={{height:"125px"}}>
+            <h1 className="h1-seo" style={{fontSize:"53px"}}>
             <Typical
             loop={Infinity}
             wrapper = "b"
             steps={[
-                'For your business',1000,
-                'For your blog', 1000,
-                'For your start-up', 1000,
-                'For your company', 1000,
-                'For your e-commernce', 1000,
+                'business',1000,
+                'blog', 1000,
+                'start-up', 1000,
+                'company', 1000,
+                'e-commerce', 1000,
             ]}
             >
             </Typical>
              </h1>
+             </div>
             
             <Link to="/hosting">
             <Button
@@ -88,15 +86,12 @@ function IndexHeader() {
             </Button>
             </Link>
 
-            <br/>
-            <br/>
-            <br/>
-            <br/>
-            <br/>
-            <div>
+            
+            <div style={{marginTop:"20px"}}>
               <h4>scroll down</h4>
               <i className = "fa fa-chevron-down"/>
               </div>
+            </div>  
           </div>
           
         </Container>

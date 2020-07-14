@@ -51,12 +51,14 @@ function IndexNavbar() {
           <div className="navbar-translate">
             <NavbarBrand
             data-placement="bottom"
-            href="/"
+          
             >
+            <Link to="/">
             
             <img alt="#" src= {require("../../assets/img/orion-logo.png")}
             style={{maxWidth:"auto", height:"18px", marginTop:"-5px",marginRight:"8px"}}
             />
+            </Link>
                
             
             </NavbarBrand>

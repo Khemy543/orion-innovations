@@ -113,14 +113,11 @@ function LandingPage() {
       <Helmet>
       <title>Home | Orion Innovations Limited</title>
         </Helmet>
-      <IndexNavbar />
-      <div className="wrapper">
-        <IndexHeader />
-        <div className="main">
+        <div>
         <CookieConsent
         location="bottom"
         buttonText="I understand"
-        cookieName="myAwesomeCookieName7"
+        cookieName="myAwesomeCookieName07"
         style={{ background: "rgb(44, 168, 255)" }}
         buttonStyle={{ backgroundColor:"rgb(44, 168, 255)", color: "white", fontSize: "13px" , borderRadius:"4px", border:"1px solid white"}}
         expires={150000}
@@ -133,28 +130,27 @@ function LandingPage() {
     </div>
     
     </CookieConsent>
-        </div> 
-        <div className="section section-contact-us text-center">
-          <Container>
+        </div>
+     
+      <IndexHeader />
+      <div className="section">
+      <IndexNavbar />
+        <Container>
+          <Row>
+        <div className="section section-contact-us text-center" style={{marginTop:"-70px"}}>
+          
           <h4 className="sub-title">WEB DESIGN COMPANY | WEB DEVELOPMENT | WEB MAINTENANCE</h4>
           <h2 className="title">TOP CLASS WEB DESIGN, MAINTENANCE AND DIGITAL MARKETING COMPANY</h2>
           <p  style={{color:"black", fontWeight:"inherit"}} >
           Orion Innovations is a start-up organization offering web and internet services to institutions and companies of all kinds. We offer services in website designing, development, hosting, marketing, maintenance and analysis. 
-We have ventured into the web-service industry to offer superior and unique services to companies. Our experience and expertise in web designs and web sales give us a backing to provide solutions that are currently lacking in the market.
-We at Orion Innovations are positive that anyone who leverages on our business will remain happy and interested.
+          We have ventured into the web-service industry to offer superior and unique services to companies. Our experience and expertise in web designs and web sales give us a backing to provide solutions that are currently lacking in the market.
+          We at Orion Innovations are positive that anyone who leverages on our business will remain happy and interested.
           </p>
-            </Container>
-          </div>
-
-        <div className="section section-contact-us text-center"
-        style={{
-          marginTop:"-90px"
-        }}
-        >
-          <Container>
-            <Row>
             
-              <Col md="4">
+          </div>
+          </Row>
+         <Row className="text-center">
+              <Col md="4" >
                   <div  data-aos="slide-right" data-aos-delay="400">
                     <img alt="#" src={require("../assets/img/services/service7.jpg")}
                      
@@ -172,7 +168,7 @@ We at Orion Innovations are positive that anyone who leverages on our business w
               </Col>
              
               <Col md="4">
-              <div data-aos="slide-right" data-aos-delay="200">
+              <div data-aos="slide-right" data-aos-delay="200" >
                     <img alt="#" src={require("../assets/img/services/service4.png")}
                     
                        className="zoom"
@@ -204,7 +200,7 @@ We at Orion Innovations are positive that anyone who leverages on our business w
               </Col>
               
               </Row>
-              <Row>
+              <Row className='text-center'>
               <Col md="4">
               <div data-aos="slide-right" data-aos-delay="400">
                     <img alt="#" src={require("../assets/img/services/service3.png")}
@@ -254,17 +250,13 @@ We at Orion Innovations are positive that anyone who leverages on our business w
                   </div>
                     </div>
               </Col>
-              
-              </Row>
-              
-            </Container>
-        </div>
-        
 
-        <div className="section section-dark section-nucleo-icons" style={{backgroundColor:"#0b1011"}}>
-        <Container style={{marginBottom:"40px"}}>
-          <Row>
-            <Col lg="6" md="12" data-aos="fade-right" data-aos-delay="200">
+        </Row>
+
+
+        <Row className="section-dark section-nucleo-icons" style={{backgroundColor:"rgb(11, 16, 17)"}}>
+       
+            <Col lg="6" md="12"  className="mt-2" data-aos="fade-right" data-aos-delay="200">
               <h2 className="sub-title" style={{color:"white"}}>Our Promises</h2>
               <br />
               <p className="description" style={{marginTop:"-30px"}}>
@@ -280,36 +272,29 @@ We at Orion Innovations are positive that anyone who leverages on our business w
             </Col>
             <Col lg="6" md="12">
               <div className="icons-container" style={{marginTop:"30px"}}>
-                <i className="fa fa-clock-o" data-aos="zoom-in" data-aos-delay="500" style={{color:"#0976b4"}}/>
-                <i className="fa fa-cloud-download" data-aos="zoom-in"data-aos-delay="500" style={{color:"#dd4b39"}}/>
-                <i className="fa fa-camera" data-aos="zoom-in"data-aos-delay="500" style={{color:"rgb(9, 180, 70)"}}/>
-                <i className="fa fa-key" data-aos="zoom-in" data-aos-delay="500" style={{color:"rgb(9, 180, 70)"}}/>
-                <i className="fa fa-address-card" data-aos="zoom-in" data-aos-delay="500" style={{color:"#55acee"}}/>
-                <i className="fa fa-thumbs-o-up" style={{color:"white"}} data-aos="zoom-in" data-aos-delay="500"/>
-                <i className="fa fa-lightbulb-o" data-aos="zoom-in" data-aos-delay="500" style={{color:"#0976b4"}}/>
-                <i className="fa fa-heart-o" data-aos="zoom-in" data-aos-delay="500" style={{color:"#dd4b39"}}/>
-                <i className="fa fa-balance-scale" data-aos="zoom-in" data-aos-delay="500" style={{color:"rgb(9, 180, 70)"}}/>
-                <i className="fa fa-calendar-check-o" data-aos="zoom-in" data-aos-delay="500" style={{color:"rgb(249, 207, 0)"}}/>
-                <i className="fa fa-commenting-o" data-aos="zoom-in" data-aos-delay="500" style={{color:"#0976b4"}} />
-                <i className="fa fa-database" data-aos="zoom-in" data-aos-delay="500" style={{color:"#dd4b39"}}/>
-                <i className="fa fa-desktop" data-aos="zoom-in" data-aos-delay="500" style={{color:"rgb(9, 180, 70)"}}/>
-                <i className="fa fa-snowflake-o" data-aos="zoom-in" data-aos-delay="500" style={{color:"rgb(249, 207, 0)"}}/>
-                <i className="fa fa-star-o" data-aos="zoom-in" data-aos-delay="500" style={{color:"rgb(249, 207, 0)"}}/>
+              <i className="fa fa-clock-o" data-aos="zoom-in" data-aos-delay="500" style={{color:"#0976b4"}}/>
+              <i className="fa fa-cloud-download" data-aos="zoom-in"data-aos-delay="500" style={{color:"#dd4b39"}}/>
+              <i className="fa fa-camera" data-aos="zoom-in"data-aos-delay="500" style={{color:"rgb(9, 180, 70)"}}/>
+              <i className="fa fa-key" data-aos="zoom-in" data-aos-delay="500" style={{color:"rgb(9, 180, 70)"}}/>
+              <i className="fa fa-address-card" data-aos="zoom-in" data-aos-delay="500" style={{color:"#55acee"}}/>
+              <i className="fa fa-thumbs-o-up" style={{color:"white"}} data-aos="zoom-in" data-aos-delay="500"/>
+              <i className="fa fa-lightbulb-o" data-aos="zoom-in" data-aos-delay="500" style={{color:"#0976b4"}}/>
+              <i className="fa fa-heart-o" data-aos="zoom-in" data-aos-delay="500" style={{color:"#dd4b39"}}/>
+              <i className="fa fa-balance-scale" data-aos="zoom-in" data-aos-delay="500" style={{color:"rgb(9, 180, 70)"}}/>
+              <i className="fa fa-calendar-check-o" data-aos="zoom-in" data-aos-delay="500" style={{color:"rgb(249, 207, 0)"}}/>
+              <i className="fa fa-commenting-o" data-aos="zoom-in" data-aos-delay="500" style={{color:"#0976b4"}} />
+              <i className="fa fa-database" data-aos="zoom-in" data-aos-delay="500" style={{color:"#dd4b39"}}/>
+              <i className="fa fa-desktop" data-aos="zoom-in" data-aos-delay="500" style={{color:"rgb(9, 180, 70)"}}/>
+              <i className="fa fa-snowflake-o" data-aos="zoom-in" data-aos-delay="500" style={{color:"rgb(249, 207, 0)"}}/>
+              <i className="fa fa-star-o" data-aos="zoom-in" data-aos-delay="500" style={{color:"rgb(249, 207, 0)"}}/>
               </div>
             </Col>
-          </Row>
-        </Container>
-      </div>
+          
+      </Row>
       
 
-      <div className="section section-about-us"
-        style={{
-          marginTop:"-70px"
-
-        }}
-        >
-          <Container>
-            <Row>
+      
+            <Row style={{marginTop:"50px"}}>
               <Col className="ml-auto mr-auto text-center" md="8">
                 
                 <h5 >
@@ -318,9 +303,10 @@ We at Orion Innovations are positive that anyone who leverages on our business w
                 </h5>
               </Col>
             </Row>
-            <div className="separator separator-primary"></div>
+            
             <div className="section-story-overview">
               <Row>
+
                 <Col md="6">
                   <div 
                     className="image-container image-left"
@@ -346,10 +332,8 @@ We at Orion Innovations are positive that anyone who leverages on our business w
                  
                 </Col>
               </Row>
-            </div>
-          </Container>
-        </div>
-
+             </div>
+                    
         <div className="section section-contact-us text-center" 
         style={{
           background: "linear-gradient(rgba(0, 0, 0, 0.83),rgba(0, 0, 0, 0.83)), url(" + require("../assets/img/header2.jpg") + ") no-repeat fixed",
@@ -374,43 +358,48 @@ We at Orion Innovations are positive that anyone who leverages on our business w
            </div>
             </Container>
         </div> 
-        
-        <div className="section" style={{marginTop:"50px"}}>
-        <Container>
+       
+       
+        <div  className= "section">
           <Row>
-            <Col md="12">
+          <Col md="12" style={{overflowX:"hidden",overflowY:"hidden"}}>
         <Slider {...settings}>
         <div>
-        <Card style={{maxWidth:"300px", border:"1px solid #f8f9fa"}}>
+        <Col>
+        <Card style={{maxWidth:"300px", border:"1px solid #f8f9fa",margin:"0px 0px 0px 0px", padding:"0px 0px 0px 0px"}}>
         
         <img alt="#" src={require("../assets/img/orion.png")} style={{borderRadius:"100%", width:"50px", height:"50px",
         marginTop:"10px", marginLeft:"15px"
         }}/>
         <CardBody>
 
-        <CardTitle style={{fontWeight:"bold"}}>C.E.O Orion Innovations</CardTitle>
+        <CardTitle style={{fontWeight:"bold",height:"30px"}}>C.E.O Orion Innovations</CardTitle>
         <CardText style={{fontSize:"14px"}}>
         Great work with beautiful color matching. I didnt know website could be delivered this quick.
         </CardText>
         </CardBody>
       </Card>
+      </Col>
         </div>
         <div>
-        <Card style={{maxWidth:"300px", border:"1px solid #f8f9fa"}}>
+          <Col>
+        <Card style={{maxWidth:"300px", border:"1px solid #f8f9fa",margin:"0px 0px 0px 0px", padding:"0px 0px 0px 0px"}}>
         
         <img alt="#" src={require("../assets/img/aka.PNG")} style={{ width:"80px", height:"50px",
-        marginTop:"10px", marginLeft:"15px"
+        marginTop:"10px"
         }}/>
         <CardBody>
 
-        <CardTitle style={{fontWeight:"bold"}}>C.E.O AKA Productive Solutions</CardTitle>
+        <CardTitle style={{fontWeight:"bold",height:"30px"}}>C.E.O AKA Productive Solutions</CardTitle>
         <CardText style={{fontSize:"14px"}}>
         Great work with beautiful color matching. I didnt know website could be delivered this quick.
         </CardText>
         </CardBody>
       </Card>
+      </Col>
         </div>
-        <div>
+      <div>
+        <Col>
         <Card style={{maxWidth:"300px", border:"1px solid #f8f9fa"}}>
         
         <img alt="#" src={require("../assets/img/martek.jpg")} style={{borderRadius:"100%", width:"80px", height:"50px",
@@ -418,14 +407,16 @@ We at Orion Innovations are positive that anyone who leverages on our business w
         }}/>
         <CardBody>
 
-        <CardTitle style={{fontWeight:"bold"}}>C.E.O Martek</CardTitle>
+        <CardTitle style={{fontWeight:"bold",height:"30px"}}>C.E.O Martek</CardTitle>
         <CardText style={{fontSize:"14px"}}>
         Great work with beautiful color matching. I didnt know website could be delivered this quick.
         </CardText>
         </CardBody>
       </Card>
+      </Col>
         </div>
         <div>
+          <Col>
         <Card style={{maxWidth:"300px", border:"1px solid #f8f9fa"}}>
         
         <img alt="#" src={require("../assets/img/frank.jpg")} style={{ width:"60px", height:"50px",
@@ -433,18 +424,20 @@ We at Orion Innovations are positive that anyone who leverages on our business w
         }}/>
         <CardBody>
 
-        <CardTitle style={{fontWeight:"bold"}}>C.E.O Franks Assafuah Enterprise</CardTitle>
+        <CardTitle style={{fontWeight:"bold",height:"30px"}}>C.E.O Franks Assafuah Enterprise</CardTitle>
         <CardText style={{fontSize:"14px"}}>
         Great work with beautiful color matching. I didnt know website could be delivered this quick.
         </CardText>
         </CardBody>
       </Card>
+      </Col>
         </div>
       </Slider>
       </Col>
       </Row>
-      </Container>
-          </div> 
+      </div>
+     
+ 
 
 
         <div className="section section-contact-us text-center" data-aos="fade-right" style={{marginTop:"-50px"}}>
@@ -608,7 +601,7 @@ We at Orion Innovations are positive that anyone who leverages on our business w
           </Row>
         </Container>
       </div>
-
+</Container>
       </div>
       <DarkFooter />
     </div>
