@@ -139,8 +139,8 @@ function LandingPage() {
           <Row>
         <div className="section section-contact-us text-center" style={{marginTop:"-70px"}}>
           
-          <h4 className="sub-title">WEB DESIGN COMPANY | WEB DEVELOPMENT | WEB MAINTENANCE</h4>
-          <h2 className="title">TOP CLASS WEB DESIGN, MAINTENANCE AND DIGITAL MARKETING COMPANY</h2>
+          {/* <h4 className="sub-title">WEB DESIGN | WEB UPGRADES AND RENOVATIONS | WEB HOSTING</h4> */}
+          <h3 className="title">WEB DESIGN | WEB UPGRADES AND RENOVATIONS | WEB HOSTING</h3>
           <p  style={{color:"black", fontWeight:"inherit"}} >
           Orion Innovations is a start-up organization offering web and internet services to institutions and companies of all kinds. We offer services in website designing, development, hosting, marketing, maintenance and analysis. 
           We have ventured into the web-service industry to offer superior and unique services to companies. Our experience and expertise in web designs and web sales give us a backing to provide solutions that are currently lacking in the market.
@@ -159,8 +159,23 @@ function LandingPage() {
                     <div className="description" style={{marginTop:"-30px"}}>
                     <h4 style={{color:"black", fontWeight:"500"}}>Website Design</h4>
                     <p className="sub-title" style={{color:"rgba(0, 0, 0, 0.62)", fontWeight:"500"}}>
-                      Strategically planned and innovative website designs to help your company ot business
-                      move to the next level
+                    Innovative, Aesthetic, Well-thought out designs to convey the uniqueness of your company to your future customers.
+                    </p>
+                    
+                  </div>
+                    </div>
+              </Col>
+
+              <Col md="4">
+              <div data-aos="slide-right" data-aos-delay="400">
+                    <img alt="#" src={require("../assets/img/services/service3.png")}
+                   
+                      className="zoom"
+                    />
+                    <div className="description" style={{marginTop:"-30px"}}>
+                    <h4 style={{color:"black", fontWeight:"500"}}>Website Upgrades and Renovations</h4>
+                    <p className="sub-title" style={{color:"rgba(0, 0, 0, 0.62)", fontWeight:"500"}}>
+                      We give a facelift to your existing websites
                     </p>
                     
                   </div>
@@ -176,47 +191,17 @@ function LandingPage() {
                     <div className="description" style={{marginTop:"-30px"}}>
                     <h4 style={{color:"black", fontWeight:"500"}}>Website Hosting</h4>
                     <p className="sub-title" style={{color:"rgba(0, 0, 0, 0.62)", fontWeight:"500"}}> 
-                      Larger, yet dramatically thinner. More powerful, but
-                      remarkably power efficient.
-                    </p>
-                    
-                  </div>
-                    </div>
-              </Col>
-              <Col md="4">
-              <div data-aos="slide-right">
-                    <img alt="#" src={require("../assets/img/services/service5.png")}
-                   
-                      className="zoom"
-                    />
-                    <div className="description" style={{marginTop:"-30px"}}>
-                    <h4 style={{color:"black", fontWeight:"500"}}>Website Marketing</h4>
-                    <p className="sub-title" style={{color:"rgba(0, 0, 0, 0.62)", fontWeight:"500"}}>
-                      Digital marketing of web services on digital and media platforms to promote products and services
+                    All your needs met in one request. We don’t only design your website, we provide hosting services as well. 
                     </p>
                     
                   </div>
                     </div>
               </Col>
               
+              
               </Row>
-              <Row className='text-center'>
-              <Col md="4">
-              <div data-aos="slide-right" data-aos-delay="400">
-                    <img alt="#" src={require("../assets/img/services/service3.png")}
-                   
-                      className="zoom"
-                    />
-                    <div className="description" style={{marginTop:"-30px"}}>
-                    <h4 style={{color:"black", fontWeight:"500"}}>Website Upgrades and Renovations</h4>
-                    <p className="sub-title" style={{color:"rgba(0, 0, 0, 0.62)", fontWeight:"500"}}>
-                      Larger, yet dramatically thinner. More powerful, but
-                      remarkably power efficient.
-                    </p>
-                    
-                  </div>
-                    </div>
-              </Col>
+             {/*  <Row className='text-center'>
+              
               
               <Col md="4">
               <div data-aos="slide-right" data-aos-delay="200">
@@ -251,7 +236,7 @@ function LandingPage() {
                     </div>
               </Col>
 
-        </Row>
+        </Row> */}
 
 
         <Row className="section-dark section-nucleo-icons" style={{backgroundColor:"rgb(11, 16, 17)"}}>
@@ -265,7 +250,7 @@ function LandingPage() {
                <p><i className="fa fa-check-square-o" style={{marginRight:"10px"}}/>Latest Technology</p>
                <p style={{fontSize:"17px"}}>We use React Js for all our website designs with CSS3 sytling with latest React frameworks.</p>
                <p><i className="fa fa-check-square-o" style={{marginRight:"10px"}}/>Simple process</p>
-               <p style={{fontSize:"17px"}}>It all starts with a beautifully branded design that will help your business project a professional online image</p>
+               <p style={{fontSize:"17px"}}>At Orion Innovations, we like to keep things simple and clean. Your business and your time are our priority. We aim to make your experience of working with us as uncomplicated as possible. </p>
               </p>
              
              
@@ -294,15 +279,16 @@ function LandingPage() {
       
 
       
-            <Row style={{marginTop:"50px"}}>
+            {/* <Row style={{marginTop:"50px"}}>
               <Col className="ml-auto mr-auto text-center" md="8">
                 
                 <h5 >
-                It’s not enough to have a good looking websites, your website should be a driving force of your business. A Real marketing tool which promotes your business online and drives customers to prominently view your website from any service they want.
-                  
+                It’s not enough to have a good-looking website. Your website should be the driving force of your business. 
+                A real marketing tool which promotes your business online and attracts traffic to your website for your future customers to be able to patronize your services.
+                We want to help you achieve that.
                 </h5>
               </Col>
-            </Row>
+            </Row> */}
             
             <div className="section-story-overview">
               <Row>
@@ -347,7 +333,7 @@ function LandingPage() {
           <div className="motto text-center">
             <h3 style={{color:"white"}}>Move your company to the next level</h3>
             <h3 style={{color:"white", fontSize:"50px", fontWeight:"500"}}>Website Design & Other design works</h3>
-            <p style={{color:"white"}}>Personalised customer service. We provide highly qualified and skilled trades personnel</p>
+            {/* <p style={{color:"white"}}>Personalised customer service. We provide highly qualified and skilled trades personnel</p> */}
             </div>
             <br />
             <div>
